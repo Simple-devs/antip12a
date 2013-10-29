@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c7e6e9c-81c2-428a-ba0b-94839003a038" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EN_lang.yml" afterPath="$PROJECT_DIR$/src/EN_lang.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java" afterPath="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\build.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="antip12a.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +20,7 @@
     <file path="/MoveListener.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382812957447" ignored="false" />
     <file path="/a.dummy" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382814001372" ignored="false" />
     <file path="/plugin.yml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383064294149" ignored="false" />
-    <file path="/Dummy.txt" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383079514591" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383088060397" ignored="false" />
     <file path="/lang.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382883063595" ignored="false" />
     <file path="/Lang.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382902609431" ignored="false" />
     <file path="/fragment.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382903950641" ignored="false" />
@@ -42,7 +42,6 @@
     <file path="/WorldVector.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382972619291" ignored="false" />
     <file path="/updater.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383053131567" ignored="false" />
     <file path="/Metrics.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383064582853" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383082625509" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -94,6 +92,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,15 +104,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.8178071">
       <split-first>
         <leaf>
-          <file leaf-file-name="EN_lang.yml" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/EN_lang.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="107" selection-start="762" selection-end="762" vertical-scroll-proportion="0.48295453">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -141,46 +131,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Fireball.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/entity/Fireball.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="17" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Projectile.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/entity/Projectile.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/World.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="656" column="32" selection-start="21363" selection-end="21363" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EntityExplodeEvent.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/event/entity/EntityExplodeEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="7" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
+                <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7259787">
                   <folding />
                 </state>
               </provider>
@@ -311,7 +265,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,6 +304,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,9 +321,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -420,19 +374,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -458,6 +399,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -527,8 +481,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -547,16 +501,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3469697" sideWeight="0.83617747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20378788" sideWeight="0.83617747" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16366611" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Time Tracker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="TimeTrackerPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33105803" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TimeTrackerPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -636,32 +590,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/ChatListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/CommandListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Metrics/SimplePlotter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Updater/updater.java">
@@ -673,9 +609,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/MoveListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/JoinListener.java">
@@ -699,25 +633,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/entity/Fireball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="17" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/entity/Projectile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/World.java">
@@ -729,7 +652,12 @@
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/bukkit-1.6.4-R0.1-20130923.182036-4-sources.jar!/org/bukkit/event/entity/EntityExplodeEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="7" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
+        <state line="61" column="7" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EN_lang.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -741,9 +669,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EN_lang.yml">
+    <entry file="file://$PROJECT_DIR$/nbproject/build-impl.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="107" selection-start="762" selection-end="762" vertical-scroll-proportion="0.48295453">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.025501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7259787">
           <folding />
         </state>
       </provider>
