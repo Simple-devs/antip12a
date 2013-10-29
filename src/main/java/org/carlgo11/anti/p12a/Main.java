@@ -38,7 +38,7 @@ public class Main extends JavaPlugin
         loadFile();
         checkMetrics();
         checkUpdater();
-        randomText.add("g");
+        this.randomText.add("g");
 
         for (String s : randomText)
         {

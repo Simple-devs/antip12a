@@ -27,7 +27,7 @@
     <file path="/sv.yml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382890268761" ignored="false" />
     <file path="/loadlang.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382905067570" ignored="false" />
     <file path="/EN_lang.yml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382902497433" ignored="false" />
-    <file path="/Main.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383064173318" ignored="false" />
+    <file path="/Main.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1383090185119" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/AzhawkChunker/pom.xml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382967828061" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/AzhawkChunker/src/main/java/Main.java" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382968581364" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/AzhawkChunker/src/main/resources/plugin.yml" changelist="8c7e6e9c-81c2-428a-ba0b-94839003a038" time="1382969206573" ignored="false" />
@@ -106,7 +106,7 @@
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="128" column="33" selection-start="4839" selection-end="4839" vertical-scroll-proportion="0.41371682">
+                <state line="39" column="23" selection-start="1233" selection-end="1257" vertical-scroll-proportion="0.5641593">
                   <folding />
                 </state>
               </provider>
@@ -710,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="33" selection-start="4839" selection-end="4839" vertical-scroll-proportion="0.41371682">
+        <state line="39" column="23" selection-start="1233" selection-end="1257" vertical-scroll-proportion="0.5641593">
           <folding />
         </state>
       </provider>
