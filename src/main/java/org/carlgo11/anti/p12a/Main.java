@@ -61,7 +61,7 @@ public class Main extends JavaPlugin
     }
 
     public void checkUpdater() {
-        String s = getConfig().getString("update");
+        String s = getConfig().getString("Update");
         if (s.equalsIgnoreCase("Check")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.NO_DOWNLOAD, false);
             getLogger().info("[" + getDescription().getName() + "] " + "Updater: check-update enabled!");
