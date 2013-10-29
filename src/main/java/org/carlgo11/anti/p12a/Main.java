@@ -131,6 +131,7 @@ public class Main extends JavaPlugin
             this.saveDefaultConfig();
             System.out.println("[" + getDescription().getName() + "] " + "No config.yml detected, config.yml created.");
         }
+        this.getConfig().options().copyDefaults(true);
     }
 
     /* For future need
