@@ -2,7 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c7e6e9c-81c2-428a-ba0b-94839003a038" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\build.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\DE_lang.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\EN_lang.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\FI_lang.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\FR_lang.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\SV_lang.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\config.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Language\Lang.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Language\loadlang.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\BlockListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\ChatListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\CommandListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\JoinListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\MoveListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Main.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Metrics\Metrics.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Metrics\SimplePlotter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\RandomString.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Updater\updater.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\plugin.yml" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\DE_lang.yml" afterPath="$PROJECT_DIR$/src/main/resources/DE_lang.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\EN_lang.yml" afterPath="$PROJECT_DIR$/src/main/resources/EN_lang.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\FI_lang.yml" afterPath="$PROJECT_DIR$/src/main/resources/FI_lang.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\FR_lang.yml" afterPath="$PROJECT_DIR$/src/main/resources/FR_lang.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\SV_lang.yml" afterPath="$PROJECT_DIR$/src/main/resources/SV_lang.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Language\Lang.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Language/Lang.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Language\loadlang.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Language/loadlang.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\BlockListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/BlockListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\ChatListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/ChatListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\CommandListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/CommandListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\JoinListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/JoinListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Listener\MoveListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/MoveListener.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Metrics\Metrics.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Metrics/Metrics.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Metrics\SimplePlotter.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Metrics/SimplePlotter.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\RandomString.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/RandomString.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org\carlgo11\anti\p12a\Updater\updater.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Updater/updater.java" />
+      <change type="MOVED" beforePath="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/antip12a.iml" afterPath="$PROJECT_DIR$/antip12a.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="antip12a.iws" />
@@ -105,16 +143,18 @@
       <split-first>
         <leaf>
           <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="28" column="13" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="13" column="12" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
                   <folding />
@@ -123,7 +163,7 @@
             </entry>
           </file>
           <file leaf-file-name="Metrics.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Metrics/Metrics.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Metrics/Metrics.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="193" column="21" selection-start="5795" selection-end="5795" vertical-scroll-proportion="0.0">
                   <folding />
@@ -131,17 +171,35 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7259787">
+                <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="antip12a.iml" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/antip12a.iml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="130" column="53" selection-start="7705" selection-end="7706" vertical-scroll-proportion="0.3007663">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="JoinListener.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/JoinListener.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/JoinListener.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="31" column="26" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0">
                   <folding />
@@ -154,7 +212,7 @@
       <split-second>
         <leaf>
           <file leaf-file-name="EN_lang.yml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/EN_lang.yml">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/EN_lang.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
@@ -182,7 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Language/loadlang.java" />
         <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/ChatListener.java" />
         <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/MoveListener.java" />
         <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/CommandListener.java" />
@@ -198,6 +255,7 @@
         <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Metrics/Metrics.java" />
         <option value="$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java" />
         <option value="$PROJECT_DIR$/src/EN_lang.yml" />
+        <option value="$PROJECT_DIR$/antip12a.iml" />
       </list>
     </option>
   </component>
@@ -300,6 +358,32 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="antip12a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AntiP12a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -308,9 +392,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
@@ -326,15 +410,15 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.carlgo11.anti.p12a" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src" />
-      <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org.carlgo11.anti.p12a" />
       <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\main\resources" />
       <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\main\java" />
+      <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src" />
+      <recent name="C:\Users\Dennis\Documents\GitHub\AntiP12a\src\org.carlgo11.anti.p12a" />
       <recent name="C:\Users\Dennis\IdeaProjects\antip12a\jar" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.carlgo11.anti.p12a" />
     </key>
   </component>
   <component name="RunManager">
@@ -481,7 +565,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="1" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -590,43 +674,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Metrics/SimplePlotter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" />
+        <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Updater/updater.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Updater/updater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="13" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/MoveListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/MoveListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" />
+        <state line="23" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Listener/JoinListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/JoinListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="26" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="12" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Metrics/Metrics.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Metrics/Metrics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="21" selection-start="5795" selection-end="5795" vertical-scroll-proportion="0.0">
           <folding />
@@ -655,17 +738,19 @@
         <state line="61" column="7" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EN_lang.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EN_lang.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/carlgo11/anti/p12a/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="13" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -676,9 +761,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7259787">
+        <state line="24" column="13" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/antip12a.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="53" selection-start="7705" selection-end="7706" vertical-scroll-proportion="0.3007663">
           <folding />
         </state>
       </provider>

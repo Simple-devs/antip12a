@@ -32,7 +32,7 @@ public class JoinListener implements Listener {
             plugin.save();
 
             p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() +
-                    ChatColor.AQUA + "/verify " + rand + ".");
+                    ChatColor.AQUA + "/verify " + rand + "");
         }
 
     }
