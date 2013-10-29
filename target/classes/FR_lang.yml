@@ -1,0 +1,16 @@
+# Utiliser & pour une couleur x.
+# %p sera remplacé par le pseudo du joueur.
+Prefix: "antip12a"
+antip12a: "&eCette commande vous montrera toutes les fonctionalités du logiciel"
+antip12a_reload: "&eActualiser la config.yml"
+antip12a_verify: "&eValider un joueur manuellement"
+antip12a_check: "&eVérifier qu'un joueur est valide"
+console_error: "Cette commande ne peut s'exécuter qu'avec un joueur"
+permission: "&cVous n'avez pas la permission d'utiliser cette commande !"
+verify_already: "&cCe joueur est déjà valide !"
+verify_confirmed: "&aest mainentant valide !"
+check_verified: "&a%p est valide"
+check_no_verfied: "&e%p n'est pas valide"
+verify_derp: "&eNous croyons que vous vous êtes trompé ! Réessayez."
+nop12a: "&aD'accord! Allez-y!"
+welcome: "&cBienvenue sur notre serveur ! Pour nous montrer que vous n'êtes pas un noob, veuillez taper cette commande dans le tchat: "

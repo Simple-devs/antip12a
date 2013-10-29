@@ -1,0 +1,16 @@
+# Käytä & värikoodeille.
+# %p korvataan pelaajan nimellä.
+Prefix: "antip12a"
+antip12a: "&eNäyttää kaikki komennot"
+antip12a_reload: "&Lataa config.yml:n uudelleen"
+antip12a_verify: "&eVahvista pelaaja manuaalisesti"
+antip12a_check: "&eTarkistaa, onko pelaaja vahvistettu"
+console_error: "Tätä komentoa voi käyttää vain pelaajana!"
+permission: "&cSinulla ei ole oikeutta käyttää tätä komentoa!"
+verify_already: "&cPelaaja on jo vahvistettu!"
+verify_confirmed: "&a%p on nyt vahvistettu!"
+check_verified: "&a%p on vahvistettu"
+check_no_verfied: "&e%p ei ole vahvistettu"
+verify_derp: "&eTeit jotain väärin. Yritä uudelleen"
+nop12a: "&aOkei. Jatka!"
+welcome: "&cTervetuloa serverille! Osoittaaksesi että osaat joitan, kirjoita seuraava komento: "

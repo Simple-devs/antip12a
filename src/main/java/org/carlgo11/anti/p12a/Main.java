@@ -126,12 +126,9 @@ public class Main extends JavaPlugin
     }
 
     public void checkConfig() {
-        File config = new File(this.getDataFolder(), "config.yml");
-        if (!config.exists()) {
-            this.saveDefaultConfig();
-            System.out.println("[" + getDescription().getName() + "] " + "No config.yml detected, config.yml created.");
-        }
+        this.saveDefaultConfig();
         this.getConfig().options().copyDefaults(true);
+        this.saveConfig();
     }
 
     /* For future need
