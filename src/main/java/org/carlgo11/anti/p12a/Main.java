@@ -314,6 +314,7 @@ public class Main extends JavaPlugin
                     World w = p.getWorld();
                     if(randomText.contains(y))
                     {
+                        p.sendMessage(Line + "");
                         randomText.remove(Line);
                         names.add(l);
                         save();
