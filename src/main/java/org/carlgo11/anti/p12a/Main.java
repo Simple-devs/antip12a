@@ -26,8 +26,8 @@ public class Main extends JavaPlugin
 {
     public String pre;
     public String Difficulty;
-    ArrayList<String> names;
-    public ArrayList<String> randomText;
+    ArrayList<String> names = new ArrayList<String>();
+    public ArrayList<String> randomText = new ArrayList<String>();
     public static YamlConfiguration LANG;
     public static File LANG_FILE;
 
@@ -38,12 +38,6 @@ public class Main extends JavaPlugin
         loadFile();
         checkMetrics();
         checkUpdater();
-        this.randomText.add("g");
-
-        for (String s : randomText)
-        {
-           getLogger().info(s);
-        }
 
         Difficulty = this.getConfig().getString("Difficulty");
 
