@@ -12,6 +12,11 @@ public class RandomString {
     Main r;
     int l;
 
+    public RandomString ()
+    {
+        random();
+    }
+
     public void getDifficulty()
     {
         r.getLogger().info("meow");
