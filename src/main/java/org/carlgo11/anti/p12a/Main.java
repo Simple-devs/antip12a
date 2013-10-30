@@ -39,7 +39,8 @@ public class Main extends JavaPlugin
         checkMetrics();
         checkUpdater();
 
-        Difficulty = this.getConfig().getString("Difficulty");
+        this.Difficulty = this.getConfig().getString("Difficulty");
+        getLogger().info("FUUUUUUUU " this.Difficulty);
 
         getServer().getPluginManager().registerEvents(new loadlang(this), this);
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
