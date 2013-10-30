@@ -312,7 +312,7 @@ public class Main extends JavaPlugin
                     String y = l + " " + args[0];
                     Location loc = p.getLocation();
                     World w = p.getWorld();
-                    if(randomText.contains(l))
+                    if(randomText.contains(y))
                     {
                         randomText.remove(Line);
                         names.add(l);
