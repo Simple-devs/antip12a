@@ -24,8 +24,7 @@ import java.util.ArrayList;
 
 public class Main extends JavaPlugin
 {
-    public String pre;
-    public String Difficulty;
+    public String Difficulty = "";
     ArrayList<String> names = new ArrayList<String>();
     public ArrayList<String> randomText = new ArrayList<String>();
     public static YamlConfiguration LANG;

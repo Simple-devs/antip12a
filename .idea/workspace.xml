@@ -106,10 +106,10 @@
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="53" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.7522124">
+                <state line="42" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.7522124">
                   <folding>
-                    <element signature="e#1015#1023#0" expanded="true" />
-                    <element signature="e#1082#1090#0" expanded="true" />
+                    <element signature="e#997#1005#0" expanded="true" />
+                    <element signature="e#1064#1072#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -127,7 +127,7 @@
           <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+                <state line="3" column="17" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -697,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+        <state line="3" column="17" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -718,10 +718,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="53" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.7522124">
+        <state line="42" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.7522124">
           <folding>
-            <element signature="e#1015#1023#0" expanded="true" />
-            <element signature="e#1082#1090#0" expanded="true" />
+            <element signature="e#997#1005#0" expanded="true" />
+            <element signature="e#1064#1072#0" expanded="true" />
           </folding>
         </state>
       </provider>
