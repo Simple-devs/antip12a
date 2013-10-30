@@ -303,15 +303,15 @@ public class Main extends JavaPlugin
                     if (randomText.contains(sender.toString()))
                     {
                         int Line = randomText.indexOf(sender.toString());
-                        String s = randomText.get(Line);
                         String y = sender + " " + args[0];
                         Player p = (Player) sender;
                         Location loc = p.getLocation();
                         World w = p.getWorld();
-                        if(y.equalsIgnoreCase(s))
+                        String l = p.getName();
+                        if(y.equalsIgnoreCase(l))
                         {
                             randomText.remove(Line);
-                            names.add(sender.toString());
+                            names.add(l);
                             save();
 
                             sender.sendMessage(Lang.prefix.toString() + Lang.nop12a.toString());

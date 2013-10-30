@@ -9,8 +9,6 @@ import org.carlgo11.anti.p12a.Language.Lang;
 import org.carlgo11.anti.p12a.Main;
 import org.carlgo11.anti.p12a.RandomString;
 
-import java.util.ArrayList;
-
 public class JoinListener implements Listener {
     Main plugin;
 
@@ -23,12 +21,13 @@ public class JoinListener implements Listener {
     public void onJoin(PlayerJoinEvent e)
     {
         Player p = e.getPlayer();
-        if ((!plugin.randomText.contains(p)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
+        String s = p.getName();
+        if ((!plugin.randomText.contains(s)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
         {
             RandomString.random();
             String rand = RandomString.string;
 
-            plugin.randomText.add(p + " " + rand);
+            plugin.randomText.add(s + " " + rand);
             plugin.save();
 
             p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() +
