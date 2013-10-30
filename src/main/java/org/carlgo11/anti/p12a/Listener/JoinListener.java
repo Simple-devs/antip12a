@@ -24,7 +24,7 @@ public class JoinListener implements Listener {
         String s = p.getName();
         if ((!plugin.randomText.contains(s)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
         {
-            RandomString.random();
+            new RandomString();
             String rand = RandomString.string;
 
             plugin.randomText.add(s + " " + rand);

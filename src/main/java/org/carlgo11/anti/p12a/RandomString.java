@@ -4,18 +4,19 @@ import java.util.Random;
 
 public class RandomString {
 
-    public static String string = "";
-    static String easy = "0123456789";
-    static String normal = "0123456789abcdefghijklmnopqrstuvwxyz";
-    static String hard = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    static String diff;
-    static Main r;
+    public String string = "";
+    String easy = "0123456789";
+    String normal = "0123456789abcdefghijklmnopqrstuvwxyz";
+    String hard = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    String diff;
+    Main r;
+    int l;
 
-    static void getDifficulty()
+    public void getDifficulty()
     {
         r.getLogger().info("meow");
         r.getLogger().info("FUUUUUUUU " + r.Difficulty);
-        String m = r.Difficulty.toString();
+        String m = r.Difficulty;
 
         if (m.equalsIgnoreCase("Hard"))
         {
@@ -30,10 +31,11 @@ public class RandomString {
             diff = easy;
         }
     }
-    public static void random()
+    public void random()
     {
         getDifficulty();
         Random n = new Random();
+        l = r.getConfig().getInt("Length");
 
         for(int i = 0; i < 10; i++)
         {
