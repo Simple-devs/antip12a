@@ -40,7 +40,7 @@ public class Main extends JavaPlugin
         checkUpdater();
 
         this.Difficulty = this.getConfig().getString("Difficulty");
-        getLogger().info("FUUUUUUUU " this.Difficulty);
+        getLogger().info("FUUUUUUUU " + this.Difficulty);
 
         getServer().getPluginManager().registerEvents(new loadlang(this), this);
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
