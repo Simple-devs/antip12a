@@ -12,15 +12,14 @@ public class RandomString {
     Main r;
     int l;
 
-    public RandomString ()
+    public RandomString (Main p)
     {
+        r = p;
         random();
     }
 
     public void getDifficulty()
     {
-        r.getLogger().info("meow");
-        r.getLogger().info("FUUUUUUUU " + r.Difficulty);
         String m = r.Difficulty;
 
         if (m.equalsIgnoreCase("Hard"))
