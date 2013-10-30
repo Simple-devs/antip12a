@@ -293,6 +293,11 @@ public class Main extends JavaPlugin
             }
             if (command.getName().equalsIgnoreCase("verify"))
             {
+                for (String s : randomText)
+                {
+                    getLogger().info(s);
+                }
+
                 if(args.length != 1)
                 {
                     sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
@@ -300,9 +305,10 @@ public class Main extends JavaPlugin
                 }
                 else
                 {
-                    if (randomText.contains(sender.toString()))
+                    String q = sender.getName();
+                    if (randomText.contains(q))
                     {
-                        int Line = randomText.indexOf(sender.toString());
+                        int Line = randomText.indexOf(q);
                         String y = sender + " " + args[0];
                         Player p = (Player) sender;
                         Location loc = p.getLocation();
