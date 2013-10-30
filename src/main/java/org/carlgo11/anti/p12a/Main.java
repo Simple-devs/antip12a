@@ -306,34 +306,26 @@ public class Main extends JavaPlugin
                 else
                 {
                     String q = sender.getName();
-                    if (randomText.contains(q))
+                    int Line = randomText.indexOf(q);
+                    Player p = (Player) sender;
+                    String l = p.getName();
+                    String y = l + " " + args[0];
+                    Location loc = p.getLocation();
+                    World w = p.getWorld();
+                    if(randomText.contains(l))
                     {
-                        int Line = randomText.indexOf(q);
-                        String y = sender + " " + args[0];
-                        Player p = (Player) sender;
-                        Location loc = p.getLocation();
-                        World w = p.getWorld();
-                        String l = p.getName();
-                        if(y.equalsIgnoreCase(l))
-                        {
-                            randomText.remove(Line);
-                            names.add(l);
-                            save();
+                        randomText.remove(Line);
+                        names.add(l);
+                        save();
 
-                            sender.sendMessage(Lang.prefix.toString() + Lang.nop12a.toString());
-                            return true;
-                        }
-                        else
-                        {
-                            sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
-                            w.createExplosion(loc, 0F, false);
-                            p.damage(0.5);
-                            return true;
-                        }
+                        sender.sendMessage(Lang.prefix.toString() + Lang.nop12a.toString());
+                        return true;
                     }
                     else
                     {
                         sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
+                        w.createExplosion(loc, 0F, false);
+                        p.damage(0.5);
                         return true;
                     }
                 }
