@@ -13,8 +13,9 @@ public class RandomString {
 
     static void getDifficulty()
     {
-        String m = r.Difficulty;
+        r.getLogger().info("meow");
         r.getLogger().info("FUUUUUUUU " + r.Difficulty);
+        String m = r.Difficulty.toString();
 
         if (m.equalsIgnoreCase("Hard"))
         {
