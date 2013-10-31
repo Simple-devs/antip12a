@@ -19,9 +19,12 @@ public class CommandListener implements Listener
     public void onCMD(PlayerCommandPreprocessEvent e) {
         Player player = e.getPlayer();
 
-        if ((!plugin.names.contains(player)) && (!e.getMessage().contains("verify")))
+        if (!player.hasPermission("AntiP12a.ignoreplayer"))
         {
-            e.setCancelled(true);
+            if (!plugin.names.contains(player))
+            {
+                e.setCancelled(true);
+            }
         }
     }
 }

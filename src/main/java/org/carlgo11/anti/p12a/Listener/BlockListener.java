@@ -19,18 +19,26 @@ public class BlockListener implements Listener
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e) {
         Player player = e.getPlayer();
-        if (!plugin.names.contains(player))
+        if (!player.hasPermission("AntiP12a.ignoreplayer"))
         {
-            e.setCancelled(true);
+            if (!plugin.names.contains(player))
+            {
+                e.setCancelled(true);
+
+            }
         }
     }
 
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent e) {
         Player player = e.getPlayer();
-        if (!plugin.randomText.contains(player))
+        if (!player.hasPermission("AntiP12a.ignoreplayer"))
         {
-            e.setCancelled(true);
+            if (!plugin.names.contains(player))
+            {
+                e.setCancelled(true);
+
+            }
         }
     }
 }

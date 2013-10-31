@@ -20,10 +20,12 @@ public class MoveListener implements Listener
     {
         Player p = e.getPlayer();
 
-
-        if (!plugin.names.contains(p))
+        if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
-            e.setCancelled(true);
+            if (!plugin.names.contains(p))
+            {
+                e.setCancelled(true);
+            }
         }
     }
 }

@@ -23,28 +23,19 @@ public class JoinListener implements Listener {
         Player p = e.getPlayer();
         String s = p.getName();
 
-        for (String l : plugin.names)
+        if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
-            plugin.getLogger().info(l);
+            if ((!plugin.names.contains(s)))
+            {
+                RandomString r = new RandomString(plugin);
+                String rand = r.string;
+
+                plugin.randomText.add(s + " " + rand);
+                plugin.save();
+
+                p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() +
+                        ChatColor.AQUA + "/verify " + rand + "");
+            }
         }
-
-        int i = plugin.names.indexOf(s);
-
-        if ((!plugin.names.get(i).equalsIgnoreCase(s)))
-        {
-            p.sendMessage(plugin.names.get(i));
-            p.sendMessage(plugin.names.get(i).equalsIgnoreCase(s) + "");
-            p.sendMessage(s);
-
-            RandomString r = new RandomString(plugin);
-            String rand = r.string;
-
-            plugin.randomText.add(s + " " + rand);
-            plugin.save();
-
-            p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() +
-                    ChatColor.AQUA + "/verify " + rand + "");
-        }
-
     }
 }
