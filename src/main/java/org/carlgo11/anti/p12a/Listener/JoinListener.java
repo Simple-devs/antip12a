@@ -22,6 +22,12 @@ public class JoinListener implements Listener {
     {
         Player p = e.getPlayer();
         String s = p.getName();
+
+        for (String l : plugin.names)
+        {
+            plugin.getLogger().info(l);
+        }
+
         if ((!plugin.names.contains(s)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
         {
             RandomString r = new RandomString(plugin);

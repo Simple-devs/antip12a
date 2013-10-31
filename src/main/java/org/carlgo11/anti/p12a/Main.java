@@ -293,11 +293,6 @@ public class Main extends JavaPlugin
             }
             if (command.getName().equalsIgnoreCase("verify"))
             {
-                for (String s : names)
-                {
-                    getLogger().info(s);
-                }
-
                 if(args.length != 1)
                 {
                     sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
