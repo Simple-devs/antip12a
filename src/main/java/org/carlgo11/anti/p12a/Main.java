@@ -306,10 +306,10 @@ public class Main extends JavaPlugin
                 else
                 {
                     String q = sender.getName();
-                    int Line = randomText.indexOf(q);
                     Player p = (Player) sender;
                     String l = p.getName();
                     String y = l + " " + args[0];
+                    int Line = randomText.indexOf(y);
                     Location loc = p.getLocation();
                     World w = p.getWorld();
                     if(randomText.contains(y))
