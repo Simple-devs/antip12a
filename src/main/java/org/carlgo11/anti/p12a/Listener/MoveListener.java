@@ -19,10 +19,11 @@ public class MoveListener implements Listener
     public void onMove(PlayerMoveEvent e)
     {
         Player p = e.getPlayer();
+        String s = p.getName();
 
         if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
-            if (!plugin.names.contains(p))
+            if (!plugin.names.contains(s))
             {
                 e.setCancelled(true);
             }

@@ -17,11 +17,12 @@ public class CommandListener implements Listener
 
     @EventHandler
     public void onCMD(PlayerCommandPreprocessEvent e) {
-        Player player = e.getPlayer();
+        Player p = e.getPlayer();
+        String s = p.getName();
 
-        if (!player.hasPermission("AntiP12a.ignoreplayer"))
+        if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
-            if (!plugin.names.contains(player))
+            if (!plugin.names.contains(s))
             {
                 e.setCancelled(true);
             }

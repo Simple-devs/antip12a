@@ -16,10 +16,11 @@ public class ChatListener implements Listener
     }
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
-        Player player = e.getPlayer();
-        if (!player.hasPermission("AntiP12a.ignoreplayer"))
+        Player p = e.getPlayer();
+        String s = p.getName();
+        if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
-            if (!plugin.names.contains(player))
+            if (!plugin.names.contains(s))
             {
                 e.setCancelled(true);
 
