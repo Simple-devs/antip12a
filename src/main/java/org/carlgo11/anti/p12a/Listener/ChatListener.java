@@ -14,6 +14,8 @@ public class ChatListener implements Listener
     {
         this.plugin = plug;
     }
+
+    /*
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         Player p = e.getPlayer();
@@ -26,5 +28,6 @@ public class ChatListener implements Listener
 
             }
         }
+        */
     }
 }
