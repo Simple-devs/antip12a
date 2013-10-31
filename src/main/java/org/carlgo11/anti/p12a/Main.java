@@ -293,7 +293,7 @@ public class Main extends JavaPlugin
             }
             if (command.getName().equalsIgnoreCase("verify"))
             {
-                for (String s : randomText)
+                for (String s : names)
                 {
                     getLogger().info(s);
                 }
@@ -305,7 +305,6 @@ public class Main extends JavaPlugin
                 }
                 else
                 {
-                    String q = sender.getName();
                     Player p = (Player) sender;
                     String l = p.getName();
                     String y = l + " " + args[0];
