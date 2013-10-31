@@ -19,7 +19,7 @@ public class BlockListener implements Listener
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e) {
         Player player = e.getPlayer();
-        if (!plugin.randomText.contains(player))
+        if (!plugin.names.contains(player))
         {
             e.setCancelled(true);
         }

@@ -22,7 +22,7 @@ public class JoinListener implements Listener {
     {
         Player p = e.getPlayer();
         String s = p.getName();
-        if ((!plugin.randomText.contains(s)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
+        if ((!plugin.names.contains(s)) || (!p.hasPermission("AntiP12a.ignoreplayer")))
         {
             RandomString r = new RandomString(plugin);
             String rand = r.string;

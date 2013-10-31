@@ -19,7 +19,7 @@ public class CommandListener implements Listener
     public void onCMD(PlayerCommandPreprocessEvent e) {
         Player player = e.getPlayer();
 
-        if ((!plugin.randomText.contains(player)) && (!e.getMessage().contains("verify")))
+        if ((!plugin.names.contains(player)) && (!e.getMessage().contains("verify")))
         {
             e.setCancelled(true);
         }

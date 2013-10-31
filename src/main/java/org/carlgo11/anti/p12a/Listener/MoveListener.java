@@ -21,7 +21,7 @@ public class MoveListener implements Listener
         Player p = e.getPlayer();
 
 
-        if (!plugin.randomText.contains(p))
+        if (!plugin.names.contains(p))
         {
             e.setCancelled(true);
         }

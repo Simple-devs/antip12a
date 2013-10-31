@@ -17,7 +17,7 @@ public class ChatListener implements Listener
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
-        if (!plugin.randomText.contains(player))
+        if (!plugin.names.contains(player))
         {
             e.setCancelled(true);
         }
