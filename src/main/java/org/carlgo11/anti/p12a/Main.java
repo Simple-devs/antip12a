@@ -291,7 +291,7 @@ public class Main extends JavaPlugin
                     return true;
                 }
             }
-            if (command.getName().equalsIgnoreCase("verify"))
+            else if (command.getName().equalsIgnoreCase("verify"))
             {
                 sender.sendMessage("k");
                 if(args.length != 1)
