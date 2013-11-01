@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/main/resources/config.yml</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/Listener/MoveListener.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/Listener/ChatListener.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/main/resources/plugin.yml</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/Listener/BlockListener.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/RandomString.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/Listener/CommandListener.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/antip12a.java</file>
-            <file>file:/C:/Users/Carl/Documents/GitHub/AntiP12a/src/org/carlgo11/anti/p12a/Listener/JoinListener.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
