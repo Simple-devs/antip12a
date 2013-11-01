@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/VerifyCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="antip12a.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,6 +11,8 @@
     <file path="/Antip12aCommand.java" changelist="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" time="1383325678863" ignored="false" />
     <file path="/VerifyCommand.java" changelist="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" time="1383325827780" ignored="false" />
     <file path="/a.java" changelist="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" time="1383326924477" ignored="false" />
+    <file path="/Main.java" changelist="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" time="1383328178236" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" time="1383328186605" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="19" selection-start="6020" selection-end="6020" vertical-scroll-proportion="0.52348226">
+            <state line="50" column="56" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.48682705">
               <folding />
             </state>
           </provider>
@@ -190,9 +187,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/SV_lang.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/EN_lang.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/VerifyCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
       </list>
     </option>
   </component>
@@ -676,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="19" selection-start="6020" selection-end="6020" vertical-scroll-proportion="0.52348226">
+        <state line="50" column="56" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.48682705">
           <folding />
         </state>
       </provider>

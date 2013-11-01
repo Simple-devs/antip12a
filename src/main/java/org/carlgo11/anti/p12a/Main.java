@@ -8,6 +8,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
+import org.carlgo11.anti.p12a.Commands.VerifyCommand;
 import org.carlgo11.anti.p12a.Language.Lang;
 import org.carlgo11.anti.p12a.Language.loadlang;
 import org.carlgo11.anti.p12a.Listener.BlockListener;
@@ -51,6 +53,11 @@ public class Main extends JavaPlugin
     @Override
     public void onDisable()
     {
+    }
+
+    public void commands(){
+        getCommand("Antip12a").setExecutor(new Antip12aCommand(this));
+        getCommand("Verify").setExecutor(new VerifyCommand(this));
     }
 
     public void checkUpdater() {
