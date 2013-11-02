@@ -123,7 +123,6 @@ public class Main extends JavaPlugin
     public void checkConfig() {
         this.saveDefaultConfig();
         this.getConfig().options().copyDefaults(true);
-        this.saveConfig();
     }
 
     /* For future need
