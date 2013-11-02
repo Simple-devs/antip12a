@@ -18,11 +18,8 @@ public class Antip12aCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)) {
-            sender.sendMessage(Lang.console_error.toString());
-            return true;
-        } else {
-            String perm = Lang.prefix.toString() + Lang.permission.toString();
+
+            String badperm = Lang.prefix.toString() + Lang.permission.toString();
 
             if (command.getName().equalsIgnoreCase("antip12a")) {
                 if (args.length == 0) {
@@ -30,7 +27,7 @@ public class Antip12aCommand implements CommandExecutor {
                         plugin.helpMessage(sender);
                         return true;
                     } else {
-                        sender.sendMessage(perm);
+                        sender.sendMessage(badperm);
                         return true;
                     }
                 } else if (args.length == 1) {
@@ -60,7 +57,7 @@ public class Antip12aCommand implements CommandExecutor {
                                 return true;
                             }
                         } else {
-                            sender.sendMessage(perm);
+                            sender.sendMessage(badperm);
                             return true;
                         }
                     } else if (args[0].equalsIgnoreCase("check")) {
@@ -73,7 +70,7 @@ public class Antip12aCommand implements CommandExecutor {
                                 return true;
                             }
                         } else {
-                            sender.sendMessage(perm);
+                            sender.sendMessage(badperm);
                             return true;
                         }
                     }
@@ -81,7 +78,6 @@ public class Antip12aCommand implements CommandExecutor {
                     plugin.helpMessage(sender);
                     return true;
                 }
-            }
         }
         return true;
     }

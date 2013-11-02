@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="antip12a:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/antip12a_jar</output-path>
+    <root id="archive" name="antip12a.jar">
+      <element id="module-output" name="antip12a" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.6.4-R0.1-SNAPSHOT/bukkit-1.6.4-R0.1-20131021.003018-11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mcstats/bukkit/metrics/R7/metrics-R7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
