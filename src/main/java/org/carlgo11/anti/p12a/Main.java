@@ -8,10 +8,7 @@ import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
 import org.carlgo11.anti.p12a.Commands.VerifyCommand;
 import org.carlgo11.anti.p12a.Language.Lang;
 import org.carlgo11.anti.p12a.Language.loadlang;
-import org.carlgo11.anti.p12a.Listener.ChatListener;
-import org.carlgo11.anti.p12a.Listener.CommandListener;
-import org.carlgo11.anti.p12a.Listener.JoinListener;
-import org.carlgo11.anti.p12a.Listener.MoveListener;
+import org.carlgo11.anti.p12a.Listener.*;
 import org.carlgo11.anti.p12a.Metrics.Metrics;
 import org.carlgo11.anti.p12a.Metrics.SimplePlotter;
 import org.carlgo11.anti.p12a.Updater.updater;
@@ -40,6 +37,7 @@ public class Main extends JavaPlugin
 
         getServer().getPluginManager().registerEvents(new loadlang(this), this);
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
+        getServer().getPluginManager().registerEvents(new InteractListener(this), this);
         getServer().getPluginManager().registerEvents(new ChatListener(this), this);
         getServer().getPluginManager().registerEvents(new MoveListener(this), this);
         getServer().getPluginManager().registerEvents(new CommandListener(this), this);
