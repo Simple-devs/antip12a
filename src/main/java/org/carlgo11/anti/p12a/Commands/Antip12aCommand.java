@@ -1,5 +1,6 @@
 package org.carlgo11.anti.p12a.Commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -54,6 +55,10 @@ public class Antip12aCommand implements CommandExecutor {
                                 plugin.names.add(args[1]);
                                 plugin.save();
                                 sender.sendMessage(Lang.prefix.toString() + Lang.verify_confirmed.toString().replace("%p", args[1]));
+                                if(Bukkit.getOfflinePlayer(args[1]).isOnline()){
+                                    Player gummibjornar = Bukkit.getPlayer(args[1]);
+                                    gummibjornar.sendMessage(Lang.prefix.toString()+Lang.nop12a.toString());
+                                }
                                 return true;
                             }
                         } else {
