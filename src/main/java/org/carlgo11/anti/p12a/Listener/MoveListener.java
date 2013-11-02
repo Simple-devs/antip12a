@@ -1,5 +1,6 @@
 package org.carlgo11.anti.p12a.Listener;
 
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -25,7 +26,8 @@ public class MoveListener implements Listener
         {
             if (!plugin.names.contains(s))
             {
-                e.setCancelled(true);
+                Location knark = e.getFrom();
+                e.setTo(knark);
             }
         }
     }
