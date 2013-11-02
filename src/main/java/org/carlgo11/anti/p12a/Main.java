@@ -85,7 +85,7 @@ public class Main extends JavaPlugin {
                 graph1.addPlotter(new SimplePlotter("Check"));
             }else if( s.equalsIgnoreCase("Auto")) {
                 graph1.addPlotter(new SimplePlotter("Auto"));
-            } else {
+            } else if(s.equalsIgnoreCase("Off")){
                 graph1.addPlotter(new SimplePlotter("Off"));
             }
 
