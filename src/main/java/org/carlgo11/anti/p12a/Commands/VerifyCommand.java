@@ -36,6 +36,10 @@ public class VerifyCommand implements CommandExecutor {
                     Location loc = p.getLocation();
                     World w = p.getWorld();
                     if (plugin.randomText.contains(y)) {
+<<<<<<< HEAD
+=======
+                       // p.sendMessage(Line + ""); Wha is dis?
+>>>>>>> e25bfef6964303a4578500080ea16f9011fdaa72
                         plugin.randomText.remove(Line);
                         plugin.names.add(l);
                         plugin.save();

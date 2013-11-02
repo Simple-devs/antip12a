@@ -25,7 +25,8 @@ local.properties
 .loadpath
 target/
 manifest.mf
-
+.idea/*
+*.xml
 # External tool builders
 .externalToolBuilders/
 
