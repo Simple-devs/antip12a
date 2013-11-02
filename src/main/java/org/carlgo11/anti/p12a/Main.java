@@ -39,6 +39,7 @@ public class Main extends JavaPlugin
         loadFile();
         checkMetrics();
         checkUpdater();
+        commands();
 
         this.Difficulty = this.getConfig().getString("Difficulty");
 
