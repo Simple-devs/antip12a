@@ -96,7 +96,10 @@ public class Main extends JavaPlugin
 
             //graph2
             Metrics.Graph graph2 = metrics.createGraph("Language");
-            if (getConfig().getString("Language").equalsIgnoreCase("EN") || getConfig().getString("Language").isEmpty()) {
+            if (getConfig().getString("Language").isEmpty()) {
+                graph2.addPlotter(new SimplePlotter("English"));
+            }
+            else if (getConfig().getString("Language").equalsIgnoreCase("EN")) {
                 graph2.addPlotter(new SimplePlotter("English"));
             }
             else if (getConfig().getString("Language").equalsIgnoreCase("FR")) {

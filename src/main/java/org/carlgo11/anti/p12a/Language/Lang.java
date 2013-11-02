@@ -47,9 +47,11 @@ public enum Lang {
 
     @Override
     public String toString() {
-        if (this == prefix)
+        if (this == prefix) {
             return ChatColor.translateAlternateColorCodes('&', LANG.getString(this.path, def)) + " ";
-        return ChatColor.translateAlternateColorCodes('&', LANG.getString(this.path, def));
+        } else {
+            return ChatColor.translateAlternateColorCodes('&', LANG.getString(this.path, def));
+        }
     }
 
     /**
