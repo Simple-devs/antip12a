@@ -1,18 +1,13 @@
 package org.carlgo11.anti.p12a;
 
-import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
 import org.carlgo11.anti.p12a.Commands.VerifyCommand;
 import org.carlgo11.anti.p12a.Language.Lang;
 import org.carlgo11.anti.p12a.Language.loadlang;
-import org.carlgo11.anti.p12a.Listener.BlockListener;
 import org.carlgo11.anti.p12a.Listener.ChatListener;
 import org.carlgo11.anti.p12a.Listener.CommandListener;
 import org.carlgo11.anti.p12a.Listener.JoinListener;
@@ -48,7 +43,6 @@ public class Main extends JavaPlugin
         getServer().getPluginManager().registerEvents(new ChatListener(this), this);
         getServer().getPluginManager().registerEvents(new MoveListener(this), this);
         getServer().getPluginManager().registerEvents(new CommandListener(this), this);
-        getServer().getPluginManager().registerEvents(new BlockListener(this), this);
     }
 
     @Override
