@@ -41,6 +41,10 @@ public class Antip12aCommand implements CommandExecutor {
                     } else if (args[0].equalsIgnoreCase("help")) {
                         plugin.helpMessage(sender);
                         return true;
+                    } else if (args[0].equalsIgnoreCase("reload")) {
+                        plugin.reload();
+                        sender.sendMessage(Lang.prefix.toString() + Lang.antip12a_reload.toString());
+                        return true;
                     } else {
                         plugin.helpMessage(sender);
                         return true;

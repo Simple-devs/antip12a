@@ -47,6 +47,7 @@ public class Main extends JavaPlugin
     @Override
     public void onDisable()
     {
+        save();
     }
 
     public void commands(){
@@ -123,15 +124,15 @@ public class Main extends JavaPlugin
         this.saveDefaultConfig();
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
-
-         /* For future need
- -     * It was outputting warnings because it was never used!
- -     *
- -     * public YamlConfiguration getLang() {
- -     *    return LANG;
- -     *}
- -     */
     }
+
+    /* For future need
+     * It was outputting warnings because it was never used!
+     *
+     * public YamlConfiguration getLang() {
+     *    return LANG;
+     *}
+     */
 
     public File getLangFile() {
         return LANG_FILE;
@@ -149,13 +150,10 @@ public class Main extends JavaPlugin
 
             BufferedReader read = new BufferedReader(new FileReader(file));
             String line;
-            int asdjf = 0;
             while ((line = read.readLine()) != null) {
                 if  (!names.contains(line)){
-                    System.out.println("line: "+asdjf+" names:"+ names.toArray());
                     names.add(line);
                 }
-                asdjf++;
             }
         }
         catch (IOException e) {
@@ -180,6 +178,13 @@ public class Main extends JavaPlugin
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void reload(){
+        save();
+        checkConfig();
+        reloadConfig();
+        loadFile();
     }
 
     public void helpMessage(CommandSender p){
