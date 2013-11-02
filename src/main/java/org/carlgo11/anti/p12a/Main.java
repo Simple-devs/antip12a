@@ -44,7 +44,7 @@ public class Main extends JavaPlugin
 
         getServer().getPluginManager().registerEvents(new loadlang(this), this);
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
-        //getServer().getPluginManager().registerEvents(new ChatListener(this), this);
+        getServer().getPluginManager().registerEvents(new ChatListener(this), this);
         getServer().getPluginManager().registerEvents(new MoveListener(this), this);
         getServer().getPluginManager().registerEvents(new CommandListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockListener(this), this);

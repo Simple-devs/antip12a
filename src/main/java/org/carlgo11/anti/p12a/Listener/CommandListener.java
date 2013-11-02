@@ -24,6 +24,8 @@ public class CommandListener implements Listener
         {
             if (!plugin.names.contains(s))
             {
+                //if (!e.)
+                p.sendMessage(e.getMessage());
                 e.setCancelled(true);
             }
         }
