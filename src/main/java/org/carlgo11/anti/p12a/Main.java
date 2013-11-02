@@ -123,6 +123,14 @@ public class Main extends JavaPlugin
         this.saveDefaultConfig();
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
+
+         /* For future need
+ -     * It was outputting warnings because it was never used!
+ -     *
+ -     * public YamlConfiguration getLang() {
+ -     *    return LANG;
+ -     *}
+ -     */
     }
 
     public File getLangFile() {

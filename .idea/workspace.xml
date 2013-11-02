@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4bb296b-e0ff-4687-b120-7ecbd2a3e625" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
     </list>
     <ignored path="antip12a.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="95" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
+            <state line="132" column="9" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.91784036">
               <folding />
             </state>
           </provider>
@@ -154,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Antip12aCommand.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Antip12aCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="51" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.7253521">
+            <state line="75" column="52" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/MoveListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/InteractListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Listener/EntityDamageListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java" />
       </list>
     </option>
   </component>
@@ -785,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="95" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/VerifyCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="79" selection-start="1623" selection-end="1629" vertical-scroll-proportion="0.0">
@@ -801,7 +793,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Commands/Antip12aCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="51" selection-start="3824" selection-end="3824" vertical-scroll-proportion="0.7253521">
+        <state line="75" column="52" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/carlgo11/anti/p12a/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="9" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.91784036">
           <folding />
         </state>
       </provider>
