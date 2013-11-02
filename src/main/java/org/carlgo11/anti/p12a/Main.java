@@ -116,7 +116,7 @@ public class Main extends JavaPlugin
             }
             metrics.start();
         } catch (Exception e) {
-            getLogger().warning(e.getMessage()+"line 119");
+            getLogger().warning(e.getMessage()+"(line 119)");
         }
     }
 
@@ -142,10 +142,13 @@ public class Main extends JavaPlugin
 
             BufferedReader read = new BufferedReader(new FileReader(file));
             String line;
+            int asdjf = 0;
             while ((line = read.readLine()) != null) {
                 if  (!names.contains(line)){
+                    System.out.println("line: "+asdjf+" names:"+ names.toArray());
                     names.add(line);
                 }
+                asdjf++;
             }
         }
         catch (IOException e) {
