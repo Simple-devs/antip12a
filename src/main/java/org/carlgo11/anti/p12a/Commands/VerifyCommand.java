@@ -22,7 +22,6 @@ public class VerifyCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("verify"))
         {
-            sender.sendMessage("k");
             if(args.length != 1)
             {
                 sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
@@ -56,7 +55,6 @@ public class VerifyCommand implements CommandExecutor {
             }
         }
 
-
-        return true;
+        return false;
     }
 }
