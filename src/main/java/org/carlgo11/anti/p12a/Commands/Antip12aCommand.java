@@ -42,9 +42,14 @@ public class Antip12aCommand implements CommandExecutor {
                         plugin.helpMessage(sender);
                         return true;
                     } else if (args[0].equalsIgnoreCase("reload")) {
+                        if(sender.hasPermission("antip12a.reload")){
                         plugin.reload();
                         sender.sendMessage(Lang.prefix.toString() + Lang.antip12a_reload.toString());
                         return true;
+                        }else{
+                            sender.sendMessage(badperm);
+                            return true;
+                        }
                     } else {
                         plugin.helpMessage(sender);
                         return true;
