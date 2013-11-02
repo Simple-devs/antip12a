@@ -16,8 +16,7 @@ import org.carlgo11.anti.p12a.Updater.updater;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Main extends JavaPlugin
-{
+public class Main extends JavaPlugin {
     public String Difficulty = "";
     public ArrayList<String> names = new ArrayList<String>();
     public ArrayList<String> randomText = new ArrayList<String>();
@@ -25,8 +24,7 @@ public class Main extends JavaPlugin
     public static File LANG_FILE;
 
     @Override
-    public void onEnable()
-    {
+    public void onEnable() {
         checkConfig();
         loadFile();
         checkMetrics();
@@ -45,12 +43,11 @@ public class Main extends JavaPlugin
     }
 
     @Override
-    public void onDisable()
-    {
+    public void onDisable() {
         save();
     }
 
-    public void commands(){
+    public void commands() {
         getCommand("Antip12a").setExecutor(new Antip12aCommand(this));
         getCommand("Verify").setExecutor(new VerifyCommand(this));
     }
@@ -60,14 +57,10 @@ public class Main extends JavaPlugin
         if (s.equalsIgnoreCase("Check")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.NO_DOWNLOAD, false);
             getLogger().info("[" + getDescription().getName() + "] " + "Updater: check-update enabled!");
-        }
-        else if (s.equalsIgnoreCase("Auto"))
-        {
+        } else if (s.equalsIgnoreCase("Auto")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.DEFAULT, false);
             getLogger().info("[" + getDescription().getName() + "] " + "Updater: auto-updater enabled!");
-        }
-        else
-        {
+        } else {
             getLogger().info("[" + getDescription().getName() + "] " + "Updater: updater disabled!");
         }
     }
@@ -94,34 +87,29 @@ public class Main extends JavaPlugin
                 graph1.addPlotter(new SimplePlotter("disabled"));
             }
 
-            //graph2
-            Metrics.Graph graph2 = metrics.createGraph("Language");
-            if (getConfig().getString("Language").isEmpty()) {
-                graph2.addPlotter(new SimplePlotter("English"));
+
+                //graph2
+                Metrics.Graph graph2 = metrics.createGraph("Language");
+                if (getConfig().getString("Language").isEmpty()) {
+                    graph2.addPlotter(new SimplePlotter("English"));
+                } else if (getConfig().getString("Language").equalsIgnoreCase("EN")) {
+                    graph2.addPlotter(new SimplePlotter("English"));
+                } else if (getConfig().getString("Language").equalsIgnoreCase("FR")) {
+                    graph2.addPlotter(new SimplePlotter("French"));
+                } else if (getConfig().getString("Language").equalsIgnoreCase("FI")) {
+                    graph2.addPlotter(new SimplePlotter("Finnish"));
+                } else if (getConfig().getString("Language").equalsIgnoreCase("DE")) {
+                    graph2.addPlotter(new SimplePlotter("German"));
+                } else if (getConfig().getString("Language").equalsIgnoreCase("SV")) {
+                    graph2.addPlotter(new SimplePlotter("Swedish"));
+                } else {
+                    graph2.addPlotter(new SimplePlotter("Other"));
+                }
+                metrics.start();
+            }catch(Exception e){
+                getLogger().warning(e.getMessage() + "(line 119)");
             }
-            else if (getConfig().getString("Language").equalsIgnoreCase("EN")) {
-                graph2.addPlotter(new SimplePlotter("English"));
-            }
-            else if (getConfig().getString("Language").equalsIgnoreCase("FR")) {
-                graph2.addPlotter(new SimplePlotter("French"));
-            }
-            else if (getConfig().getString("Language").equalsIgnoreCase("FI")) {
-                graph2.addPlotter(new SimplePlotter("Finnish"));
-            }
-            else if (getConfig().getString("Language").equalsIgnoreCase("DE")) {
-                graph2.addPlotter(new SimplePlotter("German"));
-            }
-            else if (getConfig().getString("Language").equalsIgnoreCase("SV")) {
-                graph2.addPlotter(new SimplePlotter("Swedish"));
-            }
-            else {
-                graph2.addPlotter(new SimplePlotter("Other"));
-            }
-            metrics.start();
-        } catch (Exception e) {
-            getLogger().warning(e.getMessage()+"(line 119)");
         }
-    }
 
     public void checkConfig() {
         this.saveDefaultConfig();
@@ -140,34 +128,31 @@ public class Main extends JavaPlugin
         return LANG_FILE;
     }
 
-    public void loadFile(){
-        try
-        {
+    public void loadFile() {
+        try {
             File file = new File(getDataFolder() + "/names.txt");
             boolean newFile = file.createNewFile();
-            if (newFile)
-            {
+            if (newFile) {
                 getLogger().info("Created a file called names.txt");
             }
 
             BufferedReader read = new BufferedReader(new FileReader(file));
             String line;
             while ((line = read.readLine()) != null) {
-                if  (!names.contains(line)){
+                if (!names.contains(line)) {
                     names.add(line);
                 }
             }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void save(){
+    public void save() {
         try {
             File file = new File(getDataFolder() + "/names.txt");
             boolean createFile = file.createNewFile();
-            if(createFile){
+            if (createFile) {
                 getLogger().info("Creating a file called names.txt");
             }
             PrintWriter write = new PrintWriter(file, "UTF-8");
@@ -176,20 +161,19 @@ public class Main extends JavaPlugin
                 write.println(name);
             }
             write.close();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void reload(){
+    public void reload() {
         save();
         checkConfig();
         reloadConfig();
         loadFile();
     }
 
-    public void helpMessage(CommandSender p){
+    public void helpMessage(CommandSender p) {
         p.sendMessage(ChatColor.GREEN + "======== " + Lang.prefix.toString() + ChatColor.GREEN + " ======== ");
         p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a " + Lang.antip12a.toString());
         p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a help " + Lang.antip12a.toString());
