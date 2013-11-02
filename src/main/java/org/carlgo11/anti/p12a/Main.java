@@ -116,7 +116,7 @@ public class Main extends JavaPlugin
             }
             metrics.start();
         } catch (Exception e) {
-            getLogger().warning(e.getMessage());
+            getLogger().warning(e.getMessage()+"line 119");
         }
     }
 
@@ -125,14 +125,6 @@ public class Main extends JavaPlugin
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
     }
-
-    /* For future need
-     * It was outputting warnings because it was never used!
-     *
-     * public YamlConfiguration getLang() {
-     *    return LANG;
-     *}
-     */
 
     public File getLangFile() {
         return LANG_FILE;
