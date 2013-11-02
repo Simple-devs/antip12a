@@ -81,10 +81,12 @@ public class Main extends JavaPlugin {
             //graph1
             Metrics.Graph graph1 = metrics.createGraph("auto-update"); //Sends auto-update data. if auto-update: is true it returns 'enabled'.
             String s = getConfig().getString("update");
-            if (s.equalsIgnoreCase("Check") || s.equalsIgnoreCase("Auto")) {
-                graph1.addPlotter(new SimplePlotter("enabled"));
+            if (s.equalsIgnoreCase("Check")){
+                graph1.addPlotter(new SimplePlotter("Check"));
+            }else if( s.equalsIgnoreCase("Auto")) {
+                graph1.addPlotter(new SimplePlotter("Auto"));
             } else {
-                graph1.addPlotter(new SimplePlotter("disabled"));
+                graph1.addPlotter(new SimplePlotter("Off"));
             }
 
 
