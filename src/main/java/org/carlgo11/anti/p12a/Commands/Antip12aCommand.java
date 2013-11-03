@@ -22,7 +22,6 @@ public class Antip12aCommand implements CommandExecutor {
 
             String badperm = Lang.prefix.toString() + Lang.permission.toString();
 
-            if (command.getName().equalsIgnoreCase("antip12a")) {
                 if (args.length == 0) {
                     plugin.helpMessage(sender);
                     return true;
@@ -87,7 +86,6 @@ public class Antip12aCommand implements CommandExecutor {
                     plugin.helpMessage(sender);
                     return true;
                 }
-        }
         return true;
     }
 }
