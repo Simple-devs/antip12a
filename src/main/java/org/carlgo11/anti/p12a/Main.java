@@ -69,7 +69,6 @@ public class Main extends JavaPlugin {
         try {
             Metrics metrics = new Metrics(this);
             graphs(metrics);
-            metrics.start();
         } catch (IOException e) {
             System.out.println("[" + getDescription().getName() + "] " + "Error Submitting stats!");
         }
@@ -79,8 +78,9 @@ public class Main extends JavaPlugin {
         try {
 
             //graph1
-            Metrics.Graph graph1 = metrics.createGraph("auto-update"); //Sends auto-update data. if auto-update: is true it returns 'enabled'.
+            Metrics.Graph graph1 = metrics.createGraph("auto-update");
             String s = getConfig().getString("update");
+            
             if (s.equalsIgnoreCase("Check")){
                 graph1.addPlotter(new SimplePlotter("Check"));
             }else if( s.equalsIgnoreCase("Auto")) {
@@ -90,28 +90,33 @@ public class Main extends JavaPlugin {
             }
 
 
-                //graph2
-                Metrics.Graph graph2 = metrics.createGraph("Language");
-                if (getConfig().getString("Language").isEmpty()) {
-                    graph2.addPlotter(new SimplePlotter("English"));
-                } else if (getConfig().getString("Language").equalsIgnoreCase("EN")) {
-                    graph2.addPlotter(new SimplePlotter("English"));
-                } else if (getConfig().getString("Language").equalsIgnoreCase("FR")) {
-                    graph2.addPlotter(new SimplePlotter("French"));
-                } else if (getConfig().getString("Language").equalsIgnoreCase("FI")) {
-                    graph2.addPlotter(new SimplePlotter("Finnish"));
-                } else if (getConfig().getString("Language").equalsIgnoreCase("DE")) {
-                    graph2.addPlotter(new SimplePlotter("German"));
-                } else if (getConfig().getString("Language").equalsIgnoreCase("SV")) {
-                    graph2.addPlotter(new SimplePlotter("Swedish"));
-                } else {
-                    graph2.addPlotter(new SimplePlotter("Other"));
-                }
-                metrics.start();
-            }catch(Exception e){
-                getLogger().warning(e.getMessage() + "(line 119)");
+            //graph2
+            Metrics.Graph graph2 = metrics.createGraph("Language");
+            String p = getConfig().getString("language");
+            
+            if (p.isEmpty()) {
+                graph2.addPlotter(new SimplePlotter("English"));
+            } else if (p.equalsIgnoreCase("EN")) {
+                graph2.addPlotter(new SimplePlotter("English"));
+            } else if (p.equalsIgnoreCase("FR")) {
+                graph2.addPlotter(new SimplePlotter("French"));
+            } else if (p.equalsIgnoreCase("FI")) {
+                graph2.addPlotter(new SimplePlotter("Finnish"));
+            } else if (p.equalsIgnoreCase("DE")) {
+                graph2.addPlotter(new SimplePlotter("German"));
+            } else if (p.equalsIgnoreCase("SV")) {
+                graph2.addPlotter(new SimplePlotter("Swedish"));
+            } else {
+                graph2.addPlotter(new SimplePlotter("Other"));
             }
+
+            metrics.start();
+        } catch(Exception e) {
+            getLogger().warning(e.getMessage() + "(line 119)");
+            getLogger().info(getConfig().getString("Language"));
+            getLogger().info(getConfig().getString("language"));
         }
+    }
 
     public void checkConfig() {
         this.saveDefaultConfig();
