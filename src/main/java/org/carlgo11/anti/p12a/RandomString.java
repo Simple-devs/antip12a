@@ -1,7 +1,5 @@
 package org.carlgo11.anti.p12a;
 
-import org.carlgo11.anti.p12a.Config.Config;
-
 import java.util.Random;
 
 public class RandomString {
@@ -41,7 +39,7 @@ public class RandomString {
     {
         getDifficulty();
         Random n = new Random();
-        l = Config.getInt("Length");
+        l = r.getConfig().getInt("Length");
 
         for(int i = 0; i < 10; i++)
         {

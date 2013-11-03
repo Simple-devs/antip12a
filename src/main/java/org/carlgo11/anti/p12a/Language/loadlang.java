@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
-import org.carlgo11.anti.p12a.Config.Config;
 import org.carlgo11.anti.p12a.Main;
 
 public class loadlang implements Listener {
@@ -21,13 +20,13 @@ public class loadlang implements Listener {
     public void loadLang() {
         File dir = new File(plugin.getDataFolder() + "/language");
         dir.mkdir();
-        if (!Config.getString("Language").isEmpty()) {
-            File lang = new File(plugin.getDataFolder() + "/language", Config.getString("Language") + "_lang.yml");
+        if (!plugin.getConfig().getString("Language").isEmpty()) {
+            File lang = new File(plugin.getDataFolder() + "/language", plugin.getConfig().getString("Language") + "_lang.yml");
             if (!lang.exists()) {
                 try {
                     plugin.getDataFolder().mkdir();
                     lang.createNewFile();
-                    InputStream defConfigStream = plugin.getResource(Config.getString("Language") + "_lang.yml");
+                    InputStream defConfigStream = plugin.getResource(plugin.getConfig().getString("Language") + "_lang.yml");
                     if (defConfigStream != null) {
                         YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
                         defConfig.save(lang);

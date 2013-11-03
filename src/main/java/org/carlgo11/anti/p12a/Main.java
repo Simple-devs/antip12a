@@ -6,7 +6,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
 import org.carlgo11.anti.p12a.Commands.VerifyCommand;
-import org.carlgo11.anti.p12a.Config.Config;
 import org.carlgo11.anti.p12a.Language.Lang;
 import org.carlgo11.anti.p12a.Language.loadlang;
 import org.carlgo11.anti.p12a.Listener.*;
@@ -23,19 +22,16 @@ public class Main extends JavaPlugin {
     public ArrayList<String> randomText = new ArrayList<String>();
     public static YamlConfiguration LANG;
     public static File LANG_FILE;
-    public static Main instance;
-    Config config;
 
     @Override
     public void onEnable() {
-        instance(this);
         checkConfig();
         loadFile();
         checkMetrics();
         checkUpdater();
         commands();
 
-        this.Difficulty = Config.getString("Difficulty");
+        this.Difficulty = getConfig().getString("Difficulty");
 
         getServer().getPluginManager().registerEvents(new loadlang(this), this);
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
@@ -51,18 +47,13 @@ public class Main extends JavaPlugin {
         save();
     }
 
-    public void instance(Main instance)
-    {
-        this.instance = instance;
-    }
-
     public void commands() {
         getCommand("Antip12a").setExecutor(new Antip12aCommand(this));
         getCommand("Verify").setExecutor(new VerifyCommand(this));
     }
 
     public void checkUpdater() {
-        String s = Config.getString("Update");
+        String s = getConfig().getString("Update");
         if (s.equalsIgnoreCase("Check")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.NO_DOWNLOAD, false);
             getLogger().info("[" + getDescription().getName() + "] " + "Updater: check-update enabled!");
@@ -89,7 +80,7 @@ public class Main extends JavaPlugin {
 
             //graph1
             Metrics.Graph graph1 = metrics.createGraph("auto-update");
-            String s = Config.getString("Update");
+            String s = getConfig().getString("Update");
             
             if (s.equalsIgnoreCase("Check")){
                 graph1.addPlotter(new SimplePlotter("Check"));
@@ -102,7 +93,7 @@ public class Main extends JavaPlugin {
 
             //graph2
             Metrics.Graph graph2 = metrics.createGraph("Language");
-            String p = Config.getString("Language");
+            String p = getConfig().getString("Language");
             
             if (p.isEmpty()) {
                 graph2.addPlotter(new SimplePlotter("English"));
@@ -125,7 +116,7 @@ public class Main extends JavaPlugin {
     }
 
     public void checkConfig() {
-        this.config = new Config();
+        saveDefaultConfig();
     }
 
     /* For future need
