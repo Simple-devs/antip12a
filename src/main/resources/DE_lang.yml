@@ -2,7 +2,7 @@
 # %p wird mit dem Spielernamen ausgetauscht
 Prefix: "antip12a"
 antip12a: "&eZeigt alle Befehle"
-antip12a_reload: "&Lädt die config.yml neu"
+antip12a_reload: "&eLädt die config.yml neu"
 antip12a_verify: "&eEinen Spieler manuell verifizieren"
 antip12a_check: "&ePrüft, ob ein Spieler verfiziert ist"
 console_error: "Dieser Befehl kann nur von Spielern ausgeführt werden"
