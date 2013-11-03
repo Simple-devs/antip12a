@@ -24,28 +24,23 @@ public class Antip12aCommand implements CommandExecutor {
 
             if (command.getName().equalsIgnoreCase("antip12a")) {
                 if (args.length == 0) {
-                    if (sender.hasPermission("antip12a.help")) {
-                        plugin.helpMessage(sender);
-                        return true;
-                    } else {
-                        sender.sendMessage(badperm);
-                        return true;
-                    }
+                    plugin.helpMessage(sender);
+                    return true;
                 } else if (args.length == 1) {
                     if (args[0].equalsIgnoreCase("verify")) {
                         plugin.helpMessage(sender);
                         return true;
                     } else if (args[0].equalsIgnoreCase("check")) {
-                        sender.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a check" + ChatColor.RED + " <player>");
+                        plugin.helpMessage(sender);
                         return true;
                     } else if (args[0].equalsIgnoreCase("help")) {
                         plugin.helpMessage(sender);
                         return true;
                     } else if (args[0].equalsIgnoreCase("reload")) {
                         if(sender.hasPermission("antip12a.reload")){
-                        plugin.reload();
-                        sender.sendMessage(Lang.prefix.toString() + Lang.antip12a_reload.toString());
-                        return true;
+                            plugin.reload();
+                            sender.sendMessage(Lang.prefix.toString() + Lang.antip12a_reload.toString());
+                            return true;
                         }else{
                             sender.sendMessage(badperm);
                             return true;

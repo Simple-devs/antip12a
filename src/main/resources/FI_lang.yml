@@ -1,6 +1,6 @@
 # Käytä & värikoodeille.
 # %p korvataan pelaajan nimellä.
-Prefix: "antip12a"
+Prefix: "&e[antip12a]"
 antip12a: "&eNäyttää kaikki komennot"
 antip12a_reload: "&eLataa config.yml:n uudelleen"
 antip12a_verify: "&eVahvista pelaaja manuaalisesti"

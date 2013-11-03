@@ -1,6 +1,6 @@
 # Använd & för färg koder.
 # %p kommer att ersättas med spelar namnet.
-Prefix: "antip12a"
+Prefix: "&e[antip12a]"
 antip12a: "&eSee alla kommandon!"
 antip12a_reload: "&eLadda om config.yml!"
 antip12a_verify: "&eManuellt verifiera en spelare!"

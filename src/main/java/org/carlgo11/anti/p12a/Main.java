@@ -178,11 +178,19 @@ public class Main extends JavaPlugin {
 
     public void helpMessage(CommandSender p) {
         p.sendMessage(ChatColor.GREEN + "======== " + Lang.prefix.toString() + ChatColor.GREEN + " ======== ");
-        p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a " + Lang.antip12a.toString());
-        p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a help " + Lang.antip12a.toString());
-        p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a reload " + Lang.antip12a_reload.toString());
-        p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a verify <player> " + Lang.antip12a_verify.toString());
-        p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a check <player> " + Lang.antip12a_check.toString());
+        if (p.hasPermission("antip12a.help")) {
+            p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a " + Lang.antip12a.toString());
+            p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a help " + Lang.antip12a.toString());
+        }
+        if (p.hasPermission("antip12a.reload")) {
+            p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a reload " + Lang.antip12a_reload.toString());
+        }
+        if (p.hasPermission("antip12a.verify")) {
+            p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a verify <player> " + Lang.antip12a_verify.toString());
+        }
+        if (p.hasPermission("antip12a.check")) {
+            p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a check <player> " + Lang.antip12a_check.toString());
+        }
 
     }
 }
