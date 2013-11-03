@@ -92,7 +92,7 @@ public class Main extends JavaPlugin {
 
             //graph2
             Metrics.Graph graph2 = metrics.createGraph("Language");
-            String p = getConfig().getString("language");
+            String p = getConfig().getString("Language");
             
             if (p.isEmpty()) {
                 graph2.addPlotter(new SimplePlotter("English"));
@@ -113,8 +113,7 @@ public class Main extends JavaPlugin {
             metrics.start();
         } catch(Exception e) {
             getLogger().warning(e.getMessage() + "(line 119)");
-            getLogger().info(getConfig().getString("Language"));
-            getLogger().info(getConfig().getString("language"));
+            getLogger().info(getConfig().getString("update"));
         }
     }
 
