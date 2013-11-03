@@ -12,18 +12,12 @@ import org.carlgo11.anti.p12a.Main;
 public class Config {
 
     private final File config;
-    private final YamlConfiguration messages;
-    private final YamlConfiguration notify;
-    private final YamlConfiguration misc;
     private final Main plugin;
 
     private static Config instance;
 
     public Config() {
         this.plugin = Main.instance;
-        this.messages = YamlConfiguration.loadConfiguration(plugin.getResource("messages.yml"));
-        this.notify = YamlConfiguration.loadConfiguration(plugin.getResource("notify.yml"));
-        this.misc = YamlConfiguration.loadConfiguration(plugin.getResource("misc.yml"));
         this.config = new File(plugin.getDataFolder(), "config.yml");
         setupStatic(this);
         this.load();
@@ -36,7 +30,6 @@ public class Config {
     private void load() {
         try {
             if(config.exists()) {
-                this.setUserValues();
                 this.writeConfig();
             } else {
                 this.createConfig();
@@ -53,29 +46,8 @@ public class Config {
             plugin.getLogger().severe("Could not create configuration file! - 002");
         }
         PrintWriter o = new PrintWriter(config, "UTF-8");
-        o.write(messages.saveToString());
-        o.write(notify.saveToString());
-        o.write(misc.saveToString());
         o.close();
         Main.instance.reloadConfig();
-    }
-
-    private void setUserValues() {
-        YamlConfiguration original = YamlConfiguration.loadConfiguration(config);
-        Map<String, Object> vals = original.getValues(true);
-        String key;
-        for(Entry<String, Object> entry : vals.entrySet()) {
-            key = entry.getKey();
-            // Update the individual sections values
-            // Make sure to add the period, that way the base section does not overwrite the individual options.
-            if(key.startsWith("Messages.") && messages.isSet(key)) {
-                messages.set(key, entry.getValue());
-            } else if (key.startsWith("Notify.") && notify.isSet(key)) {
-                notify.set(key, entry.getValue());
-            } else if(misc.isSet(key)){
-                this.misc.set(key, entry.getValue());
-            }
-        }
     }
 
     private void createConfig() throws IOException {
