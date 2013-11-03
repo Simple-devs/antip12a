@@ -1,6 +1,6 @@
 # Utiliser & pour une couleur x.
 # %p sera remplacé par le pseudo du joueur.
-Prefix: "&e[antip12a]"
+Prefix: "&a[antip12a]"
 antip12a: "&eCette commande vous montrera toutes les fonctionalités du logiciel"
 antip12a_reload: "&eActualiser la config.yml"
 antip12a_verify: "&eValider un joueur manuellement"

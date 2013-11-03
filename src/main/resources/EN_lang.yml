@@ -1,6 +1,6 @@
 # Use & for colour codes.
 # %p will be replaced with the player name.
-Prefix: "&e[antip12a]"
+Prefix: "&a[antip12a]"
 antip12a: "&eShows all the commands!"
 antip12a_reload: "&eReloads the config.yml!"
 antip12a_verify: "&eManually verify a player!"
