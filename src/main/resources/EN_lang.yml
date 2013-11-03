@@ -2,7 +2,7 @@
 # %p will be replaced with the player name.
 Prefix: "antip12a:"
 antip12a: "&eShows all the commands!"
-antip12a_reload: "&Reloads the config.yml!"
+antip12a_reload: "&eReloads the config.yml!"
 antip12a_verify: "&eManually verify a player!"
 antip12a_check: "&eChecks if a player has verified!"
 console_error: "This command can only be used by players!"
