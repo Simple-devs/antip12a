@@ -22,6 +22,7 @@ public class Main extends JavaPlugin {
     public ArrayList<String> randomText = new ArrayList<String>();
     public static YamlConfiguration LANG;
     public static File LANG_FILE;
+    public boolean gummibjorn = true; //WE NEED MOAR!!!!!
 
     @Override
     public void onEnable() {
@@ -40,6 +41,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ChatListener(this), this);
         getServer().getPluginManager().registerEvents(new MoveListener(this), this);
         getServer().getPluginManager().registerEvents(new CommandListener(this), this);
+        getServer().getPluginManager().registerEvents(new PickupnDropListener(this), this);
     }
 
     @Override
