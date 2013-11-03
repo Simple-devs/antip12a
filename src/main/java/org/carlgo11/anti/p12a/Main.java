@@ -113,7 +113,7 @@ public class Main extends JavaPlugin {
             metrics.start();
         } catch(Exception e) {
             getLogger().warning(e.getMessage() + "(line 119)");
-            getLogger().info(getConfig().getString("update"));
+            getLogger().info(getConfig().getString("Update"));
         }
     }
 
