@@ -35,6 +35,7 @@ public class Main extends JavaPlugin {
         checkMetrics();
         checkUpdater();
         commands();
+        backup();
 
         this.Difficulty = getConfig().getString("Difficulty");
 
@@ -206,10 +207,14 @@ public class Main extends JavaPlugin {
 
     }
 
+    public void b () {
+        new Backup(this);
+    }
+
     public void backup() {
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             public void run() {
-                Backup.runNow();
+                b();
             }
         }
                 , 0L, 1200L);

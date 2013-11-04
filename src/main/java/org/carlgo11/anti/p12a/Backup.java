@@ -25,16 +25,15 @@ public class Backup {
 
     public Backup(Main r) {
         m = r;
+        getInfo();
     }
 
     public void getInfo() {
         p = m.getConfig().getString("Backup-Time");
         q = m.getConfig().getBoolean("Backup");
-    }
 
-    public void load() {
-        if (q = true) {
-
+        if (q) {
+            save();
         }
     }
 
@@ -74,9 +73,5 @@ public class Backup {
         } catch (IOException e) {
             m.getLogger().warning(e + "");
         }
-    }
-
-    public static void runNow() {
-
     }
 }
