@@ -24,34 +24,30 @@ public class VerifyCommand implements CommandExecutor {
             sender.sendMessage(Lang.console_error.toString());
             return true;
         } else {
-            if (command.getName().equalsIgnoreCase("verify")) {
-                if (args.length != 1) {
-                    sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
+            if (args.length != 1) {
+                sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
+                return true;
+            } else {
+                Player p = (Player) sender;
+                String l = p.getName();
+                String y = l + " " + args[0];
+                int Line = plugin.randomText.indexOf(y);
+                Location loc = p.getLocation();
+                World w = p.getWorld();
+                if (plugin.randomText.contains(y)) {
+                    plugin.randomText.remove(Line);
+                    plugin.names.add(l);
+                    plugin.save();
+
+                    sender.sendMessage(Lang.prefix.toString() + Lang.nop12a.toString());
                     return true;
                 } else {
-                    Player p = (Player) sender;
-                    String l = p.getName();
-                    String y = l + " " + args[0];
-                    int Line = plugin.randomText.indexOf(y);
-                    Location loc = p.getLocation();
-                    World w = p.getWorld();
-                    if (plugin.randomText.contains(y)) {
-                        plugin.randomText.remove(Line);
-                        plugin.names.add(l);
-                        plugin.save();
-
-                        sender.sendMessage(Lang.prefix.toString() + Lang.nop12a.toString());
-                        return true;
-                    } else {
-                        sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
-                        w.createExplosion(loc, 0F, false);
-                        p.damage(0.5);
-                        return true;
-                    }
+                    sender.sendMessage(Lang.prefix.toString() + Lang.verify_derp.toString());
+                    w.createExplosion(loc, 0F, false);
+                    p.damage(0.5);
+                    return true;
                 }
             }
         }
-
-        return false;
     }
 }
