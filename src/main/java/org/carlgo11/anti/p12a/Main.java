@@ -139,8 +139,14 @@ public class Main extends JavaPlugin {
 
     public void loadFile() {
         try {
+            boolean p = new File(getDataFolder() + "/backup").mkdirs();
             File file = new File(getDataFolder() + "/names.txt");
             boolean newFile = file.createNewFile();
+
+            if (p){
+                getLogger().info("Created a backup folder");
+            }
+
             if (newFile) {
                 getLogger().info("Created a file called names.txt");
             }

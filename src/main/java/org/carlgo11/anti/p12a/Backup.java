@@ -18,7 +18,10 @@ public class Backup {
     Main m;
     Date d = new Date();
     SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
+    SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
     String b;
+    InputStream i = null;
+    OutputStream c = null;
 
     public Backup(Main r) {
         m = r;
@@ -38,19 +41,35 @@ public class Backup {
     public void save() {
         try {
             File f = new File(m.getDataFolder() + "/backup.txt");
+            File s = new File(m.getDataFolder() + "/backup/backup_" + l.format(d));
             boolean l = f.createNewFile();
             PrintWriter h = new PrintWriter(f, "UTF-8");
             BufferedReader o = new BufferedReader(new FileReader(f));
+            b = o.readLine();
 
             if (l)
             {
-                b = o.readLine();
-                if (!r.format(d).equalsIgnoreCase(r.format(b)))
-                {
-                    h.println(r.format(b));
-                }
-            } else {
+                m.getLogger().info("backup.txt file created!");
+            }
+
+            if (b.isEmpty()) {
                 h.println(r.format(d));
+            } else {
+                if (!r.format(d).equalsIgnoreCase(r.format(b))) {
+                    i = new FileInputStream(f);
+                    c = new FileOutputStream(s);
+                    byte[] u = new byte[1024];
+                    int y;
+
+                    while ((y = i.read(u)) > 0){
+                        c.write(u , 0, y);
+                    }
+
+                    i.close();
+                    c.close();
+
+                    h.println(r.format(d));
+                }
             }
         } catch (IOException e) {
             m.getLogger().warning(e + "");
