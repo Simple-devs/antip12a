@@ -1,8 +1,11 @@
 package org.carlgo11.anti.p12a;
 
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
 import org.carlgo11.anti.p12a.Commands.VerifyCommand;
@@ -22,6 +25,7 @@ public class Main extends JavaPlugin {
     public ArrayList<String> randomText = new ArrayList<String>();
     public static YamlConfiguration LANG;
     public static File LANG_FILE;
+    public Plugin p = this;
 
     @Override
     public void onEnable() {
@@ -192,5 +196,14 @@ public class Main extends JavaPlugin {
             p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a check <player> " + Lang.antip12a_check.toString());
         }
 
+    }
+
+    public void backup() {
+        getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+            public void run() {
+                Backup.runNow();
+            }
+        }
+                , 0L, 1200L);
     }
 }

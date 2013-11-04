@@ -9,3 +9,7 @@ Update: Auto
 
 Length: 10
 #The length of the random string!
+
+Backup: true
+
+Backup-Time: 1h
