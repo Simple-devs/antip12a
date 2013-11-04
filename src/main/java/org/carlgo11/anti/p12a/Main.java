@@ -27,7 +27,11 @@ public class Main extends JavaPlugin {
     public static File LANG_FILE;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Plugin p = this;
+=======
+    public boolean gummibjorn = true; //WE NEED MOAR!!!!!
+>>>>>>> 473322941d0686906555d614e00cadd2cc325a99
 =======
     public boolean gummibjorn = true; //WE NEED MOAR!!!!!
 >>>>>>> 473322941d0686906555d614e00cadd2cc325a99
