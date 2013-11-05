@@ -44,21 +44,25 @@ public class Backup {
             boolean l = f.createNewFile();
             PrintWriter h = new PrintWriter(f, "UTF-8");
             BufferedReader o = new BufferedReader(new FileReader(f));
-            b = o.readLine();
             String w = r.format(d);
+            String x = "";
+
+            while ((b = o.readLine()) != null) {
+                x = b;
+            }
 
             if (l)
             {
                 m.getLogger().info("backup.txt file created!");
-                h.println(w);
+                h.println(x);
             }
 
             m.getLogger().info(w);
-            m.getLogger().info(b);
-            m.getLogger().info(w.equalsIgnoreCase(b) + "");
+            m.getLogger().info(x);
+            m.getLogger().info(w.equalsIgnoreCase(x) + "");
 
 
-            if (!w.equalsIgnoreCase(b)) {
+            if (!w.equalsIgnoreCase(x)) {
                 i = new FileInputStream(f);
                 c = new FileOutputStream(s);
                 byte[] u = new byte[1024];
