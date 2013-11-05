@@ -15,7 +15,6 @@ public class Backup {
     String p;
     boolean q;
     Main m;
-    String b;
     String x = "";
     Date d = new Date();
     SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
@@ -42,9 +41,18 @@ public class Backup {
             File f = new File(m.getDataFolder() + "/backup.txt");
             BufferedReader o = new BufferedReader(new FileReader(f));
 
-            while ((b = o.readLine()) != null) {
-                x = b;
+            String ol;
+            while ((ol = o.readLine()) != null) {
+                x = ol;
             }
+
+            m.getLogger().info(f.getAbsolutePath() + "");
+            m.getLogger().info(f.getPath());
+            m.getLogger().info(f.getName());
+            m.getLogger().info(f.toString());
+            m.getLogger().info(x);
+            m.getLogger().info(ol);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
