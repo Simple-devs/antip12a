@@ -52,7 +52,7 @@ public class Backup {
             }
 
 
-            if (!r.format(d).equalsIgnoreCase(r.format(b))) {
+            if (!r.format(d).equalsIgnoreCase(b)) {
                 i = new FileInputStream(f);
                 c = new FileOutputStream(s);
                 byte[] u = new byte[1024];
