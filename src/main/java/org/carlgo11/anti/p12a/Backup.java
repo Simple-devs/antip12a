@@ -50,9 +50,13 @@ public class Backup {
             {
                 m.getLogger().info("backup.txt file created!");
                 h.println(r.format(d));
+                m.getLogger().info(f.exists() + "");
             }
 
-            m.getLogger().info(r.format(d));
+            m.getLogger().info(w);
+            m.getLogger().info(b);
+            m.getLogger().info(w.equalsIgnoreCase(b) + "");
+
 
             if (!w.equalsIgnoreCase(b)) {
                 i = new FileInputStream(f);
