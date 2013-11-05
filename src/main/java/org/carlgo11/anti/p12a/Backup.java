@@ -19,7 +19,6 @@ public class Backup {
     Date d = new Date();
     SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
     SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
-    String b;
     InputStream i = null;
     OutputStream c = null;
 
@@ -44,7 +43,7 @@ public class Backup {
             boolean l = f.createNewFile();
             PrintWriter h = new PrintWriter(f, "UTF-8");
             BufferedReader o = new BufferedReader(new FileReader(f));
-            b = o.readLine();
+            String b = o.readLine();
 
             if (l)
             {
