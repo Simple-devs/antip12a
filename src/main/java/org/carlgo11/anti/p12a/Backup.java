@@ -51,12 +51,7 @@ public class Backup {
             {
                 m.getLogger().info("backup.txt file created!");
                 h.println(w);
-                m.getLogger().info(f.exists() + "");
             }
-
-            m.getLogger().info(w);
-            m.getLogger().info(b);
-            m.getLogger().info(w.equalsIgnoreCase(b) + "");
 
 
             if (!w.equalsIgnoreCase(b)) {
