@@ -3,7 +3,6 @@ package org.carlgo11.anti.p12a;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.SimpleFormatter;
 
 /**
  * Bukkit Plugin
@@ -17,6 +16,7 @@ public class Backup {
     boolean q;
     Main m;
     String b;
+    String x = "";
     Date d = new Date();
     SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
     SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
@@ -37,19 +37,28 @@ public class Backup {
         }
     }
 
+    public void read() {
+        try {
+            File f = new File(m.getDataFolder() + "/backup.txt");
+            BufferedReader o = new BufferedReader(new FileReader(f));
+
+            while ((b = o.readLine()) != null) {
+                x = b;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void save() {
         try {
             File f = new File(m.getDataFolder() + "/backup.txt");
             File s = new File(m.getDataFolder() + "/backup/backup_" + l.format(d));
             boolean l = f.createNewFile();
             PrintWriter h = new PrintWriter(f, "UTF-8");
-            BufferedReader o = new BufferedReader(new FileReader(f));
             String w = r.format(d);
-            String x = "";
 
-            while ((b = o.readLine()) != null) {
-                x += b;
-            }
+            read();
 
             if (l)
             {
