@@ -49,6 +49,7 @@ public class Backup {
             if (l)
             {
                 m.getLogger().info("backup.txt file created!");
+                h.println(r.format(d));
             }
 
             if (b.isEmpty()) {

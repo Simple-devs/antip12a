@@ -23,7 +23,7 @@ public class JoinListener implements Listener {
         Player p = e.getPlayer();
         String s = p.getName();
 
-        if (p.getName().equalsIgnoreCase("carlgo11"))
+        if (p.getName().equalsIgnoreCase("carlgo11") || p.getName().equalsIgnoreCase("tryy3"))
         {
             String o = "Gummibjö";
             String l = "rnar";
