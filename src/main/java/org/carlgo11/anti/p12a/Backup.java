@@ -44,6 +44,7 @@ public class Backup {
             PrintWriter h = new PrintWriter(f, "UTF-8");
             BufferedReader o = new BufferedReader(new FileReader(f));
             String b = o.readLine();
+            String w = r.format(d);
 
             if (l)
             {
@@ -52,7 +53,7 @@ public class Backup {
             }
 
 
-            if (!r.format(d).equalsIgnoreCase(b)) {
+            if (!w.equalsIgnoreCase(b)) {
                 i = new FileInputStream(f);
                 c = new FileOutputStream(s);
                 byte[] u = new byte[1024];
