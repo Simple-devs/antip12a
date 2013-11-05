@@ -51,24 +51,21 @@ public class Backup {
                 h.println(r.format(d));
             }
 
-            if (b.isEmpty()) {
-                h.println(r.format(d));
-            } else {
-                if (!r.format(d).equalsIgnoreCase(r.format(b))) {
-                    i = new FileInputStream(f);
-                    c = new FileOutputStream(s);
-                    byte[] u = new byte[1024];
-                    int y;
 
-                    while ((y = i.read(u)) > 0){
-                        c.write(u , 0, y);
-                    }
+            if (!r.format(d).equalsIgnoreCase(r.format(b))) {
+                i = new FileInputStream(f);
+                c = new FileOutputStream(s);
+                byte[] u = new byte[1024];
+                int y;
 
-                    i.close();
-                    c.close();
-
-                    h.println(r.format(d));
+                while ((y = i.read(u)) > 0){
+                    c.write(u , 0, y);
                 }
+
+                i.close();
+                c.close();
+
+                h.println(r.format(d));
             }
         } catch (IOException e) {
             m.getLogger().warning(e + "");
