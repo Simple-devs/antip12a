@@ -48,7 +48,7 @@ public class Backup {
             String x = "";
 
             while ((b = o.readLine()) != null) {
-                x = b;
+                x += b;
             }
 
             if (l)
@@ -79,7 +79,7 @@ public class Backup {
             c.close();
             h.close();
         } catch (IOException e) {
-            m.getLogger().warning(e + "");
+            e.printStackTrace();
         }
     }
 }
