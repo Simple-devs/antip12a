@@ -50,7 +50,7 @@ public class Backup {
             if (l)
             {
                 m.getLogger().info("backup.txt file created!");
-                h.println(r.format(d));
+                h.println(w);
                 m.getLogger().info(f.exists() + "");
             }
 
@@ -69,11 +69,12 @@ public class Backup {
                     c.write(u , 0, y);
                 }
 
-                i.close();
-                c.close();
-
                 h.println(r.format(d));
             }
+
+            i.close();
+            c.close();
+            h.close();
         } catch (IOException e) {
             m.getLogger().warning(e + "");
         }
