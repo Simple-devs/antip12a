@@ -53,6 +53,10 @@ public class Backup {
                 h.println(w);
             }
 
+            m.getLogger().info(w);
+            m.getLogger().info(b);
+            m.getLogger().info(w.equalsIgnoreCase(b) + "");
+
 
             if (!w.equalsIgnoreCase(b)) {
                 i = new FileInputStream(f);
