@@ -18,7 +18,7 @@ public class Backup {
     String x = "";
     Date d = new Date();
     SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
-    SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
+    SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HHmmss");
     InputStream i = null;
     OutputStream c = null;
 
