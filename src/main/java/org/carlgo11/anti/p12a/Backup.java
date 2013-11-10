@@ -16,7 +16,7 @@ import java.util.Date;
 public class Backup {
     Main main;
     Date current_date = new Date();
-    SimpleDateFormat save_format = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
+    SimpleDateFormat save_format = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss");
     InputStream readOldFile = null;
     OutputStream saveBackupFile = null;
 
