@@ -14,8 +14,6 @@ import java.util.Date;
  * Time: 13:20
  */
 public class Backup {
-    String backup_time;
-    boolean backup_boolean;
     Main main;
     Date current_date = new Date();
     SimpleDateFormat save_format = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
@@ -24,16 +22,7 @@ public class Backup {
 
     public Backup(Main plug) {
         main = plug;
-        getInfo();
-    }
-
-    public void getInfo() {
-        backup_time = main.getConfig().getString("Backup-Time");
-        backup_boolean = main.getConfig().getBoolean("Backup");
-
-        if (backup_boolean) {
-            save();
-        }
+        save();
     }
 
     public void save() {

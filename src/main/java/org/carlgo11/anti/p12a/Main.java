@@ -206,16 +206,61 @@ public class Main extends JavaPlugin {
 
     }
 
+    public boolean getBackupBoolean()
+    {
+        return getConfig().getBoolean("Backup");
+    }
+    public int getBackupTime()
+    {
+        String time = getConfig().getString("Backup-Time");
+        int timeLength = time.length()-1;
+        char timeChar =  time.charAt(timeLength);
+        int backupTime;
+        int NewTime;
+
+        if (timeChar == 'd')
+        {
+            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
+            backupTime = 20 * 60 * 60 * 24 * NewTime;
+            return backupTime;
+        }
+        else if (timeChar == 'h')
+        {
+            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
+            backupTime = 20 * 60 * 60  * NewTime;
+            return backupTime;
+
+        }
+        else if (timeChar == 'm')
+        {
+            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
+            backupTime = 20 * 60 * NewTime;
+            return backupTime;
+
+        }
+        else
+        {
+            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
+            backupTime = 20 * NewTime;
+            return backupTime;
+
+        }
+    }
+
     public void runBackup () {
-        new Backup(this);
+        if (getBackupBoolean()){
+            new Backup(this);
+        }
     }
 
     public void backup() {
-        getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-            public void run() {
-                runBackup();
+        if (getBackupBoolean()){
+            getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+                public void run() {
+                    runBackup();
+                }
             }
+                    , getBackupTime(), getBackupTime());
         }
-                , 72000L, 72000L);
     }
 }
