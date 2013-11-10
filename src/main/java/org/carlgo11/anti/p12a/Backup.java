@@ -29,7 +29,7 @@ public class Backup {
         try {
             String CurrentDateHour = save_format.format(current_date);
             File OldNamesFile = new File(main.getDataFolder() + "/names.txt");
-            File NewBackupFile = new File(main.getDataFolder() + "/backup/names_" + CurrentDateHour);
+            File NewBackupFile = new File(main.getDataFolder() + "/backup/names_" + CurrentDateHour + ".txt");
             PrintWriter writer = new PrintWriter(OldNamesFile, "UTF-8");
 
             readOldFile = new FileInputStream(OldNamesFile);

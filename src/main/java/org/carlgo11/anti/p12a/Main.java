@@ -62,12 +62,12 @@ public class Main extends JavaPlugin {
         String s = getConfig().getString("Update");
         if (s.equalsIgnoreCase("Check")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.NO_DOWNLOAD, false);
-            getLogger().info("[" + getDescription().getName() + "] " + "Updater: check-update enabled!");
+            getLogger().info("Updater: check-update enabled!");
         } else if (s.equalsIgnoreCase("Auto")) {
             new updater(this, 56079, this.getFile(), updater.UpdateType.DEFAULT, false);
-            getLogger().info("[" + getDescription().getName() + "] " + "Updater: auto-updater enabled!");
+            getLogger().info("Updater: auto-updater enabled!");
         } else {
-            getLogger().info("[" + getDescription().getName() + "] " + "Updater: updater disabled!");
+            getLogger().info("Updater: updater disabled!");
         }
     }
 
