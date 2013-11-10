@@ -2,6 +2,8 @@ package org.carlgo11.anti.p12a;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Date;
 
 /**
@@ -12,89 +14,47 @@ import java.util.Date;
  * Time: 13:20
  */
 public class Backup {
-    String p;
-    boolean q;
-    Main m;
-    String x = "";
-    Date d = new Date();
-    SimpleDateFormat r = new SimpleDateFormat("dd-MM-yyyy HH");
-    SimpleDateFormat l = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
-    InputStream i = null;
-    OutputStream c = null;
+    String backup_time;
+    boolean backup_boolean;
+    Main main;
+    Date current_date = new Date();
+    SimpleDateFormat save_format = new SimpleDateFormat("dd-MM-yyyy_HH:mm:ss");
+    InputStream readOldFile = null;
+    OutputStream saveBackupFile = null;
 
-    public Backup(Main r) {
-        m = r;
+    public Backup(Main plug) {
+        main = plug;
         getInfo();
     }
 
     public void getInfo() {
-        p = m.getConfig().getString("Backup-Time");
-        q = m.getConfig().getBoolean("Backup");
+        backup_time = main.getConfig().getString("Backup-Time");
+        backup_boolean = main.getConfig().getBoolean("Backup");
 
-        if (q) {
+        if (backup_boolean) {
             save();
-        }
-    }
-
-    public void read() {
-        try {
-            File f = new File(m.getDataFolder() + "/backup.txt");
-            BufferedReader o = new BufferedReader(new FileReader(f));
-
-            String ol;
-            while ((ol = o.readLine()) != null) {
-                x = ol;
-            }
-
-            m.getLogger().info(f.getAbsolutePath() + "");
-            m.getLogger().info(f.getPath());
-            m.getLogger().info(f.getName());
-            m.getLogger().info(f.toString());
-            m.getLogger().info(x);
-            m.getLogger().info(ol);
-
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
     public void save() {
         try {
-            File f = new File(m.getDataFolder() + "/backup.txt");
-            File s = new File(m.getDataFolder() + "/backup/backup_" + l.format(d));
-            boolean l = f.createNewFile();
-            PrintWriter h = new PrintWriter(f, "UTF-8");
-            String w = r.format(d);
+            String CurrentDateHour = save_format.format(current_date);
+            File OldNamesFile = new File(main.getDataFolder() + "/names.txt");
+            File NewBackupFile = new File(main.getDataFolder() + "/backup/names_" + CurrentDateHour);
+            PrintWriter writer = new PrintWriter(OldNamesFile, "UTF-8");
 
-            read();
+            readOldFile = new FileInputStream(OldNamesFile);
+            saveBackupFile = new FileOutputStream(NewBackupFile);
+            byte[] bytes = new byte[1024];
+            int whileI;
 
-            if (l)
-            {
-                m.getLogger().info("backup.txt file created!");
-                h.println(x);
+            while ((whileI = readOldFile.read(bytes)) > 0){
+                saveBackupFile.write(bytes , 0, whileI);
             }
 
-            m.getLogger().info(w);
-            m.getLogger().info(x);
-            m.getLogger().info(w.equalsIgnoreCase(x) + "");
-
-
-            if (!w.equalsIgnoreCase(x)) {
-                i = new FileInputStream(f);
-                c = new FileOutputStream(s);
-                byte[] u = new byte[1024];
-                int y;
-
-                while ((y = i.read(u)) > 0){
-                    c.write(u , 0, y);
-                }
-
-                h.println(r.format(d));
-            }
-
-            i.close();
-            c.close();
-            h.close();
+            readOldFile.close();
+            saveBackupFile.close();
+            writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

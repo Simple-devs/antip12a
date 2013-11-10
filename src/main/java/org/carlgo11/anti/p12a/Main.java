@@ -1,10 +1,8 @@
 package org.carlgo11.anti.p12a;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
@@ -52,6 +50,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         save();
+        runBackup();
     }
 
     public void commands() {
@@ -207,16 +206,16 @@ public class Main extends JavaPlugin {
 
     }
 
-    public void b () {
+    public void runBackup () {
         new Backup(this);
     }
 
     public void backup() {
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             public void run() {
-                b();
+                runBackup();
             }
         }
-                , 0L, 1200L);
+                , 72000L, 72000L);
     }
 }
