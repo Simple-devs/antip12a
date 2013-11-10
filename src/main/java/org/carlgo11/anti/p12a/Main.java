@@ -210,9 +210,18 @@ public class Main extends JavaPlugin {
     {
         return getConfig().getBoolean("Backup");
     }
-    public int getBackupTime()
+    public int getTime(String whatTime)
     {
-        String time = getConfig().getString("Backup-Time");
+        String time = "";
+
+        if (whatTime == "Backup")
+        {
+            time = getConfig().getString("Backup-Time");
+        }
+        else if (whatTime == "Timer")
+        {
+            time = getConfig().getString("Kick-Time");
+        }
         int timeLength = time.length()-1;
         char timeChar =  time.charAt(timeLength);
         int backupTime;
@@ -260,7 +269,7 @@ public class Main extends JavaPlugin {
                     runBackup();
                 }
             }
-                    , getBackupTime(), getBackupTime());
+                    , getTime("Backup"), getTime("Backup"));
         }
     }
 }

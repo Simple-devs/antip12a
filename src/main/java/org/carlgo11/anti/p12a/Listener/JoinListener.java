@@ -11,6 +11,7 @@ import org.carlgo11.anti.p12a.RandomString;
 
 public class JoinListener implements Listener {
     Main plugin;
+    public Player PlayerName;
 
     public JoinListener (Main plugin)
     {
@@ -48,7 +49,22 @@ public class JoinListener implements Listener {
                 plugin.save();
 
                 p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() + ChatColor.AQUA + "/verify " + rand + "");
+                PlayerName = e.getPlayer();
+                timer();
             }
         }
+    }
+
+    public void timer()
+    {
+        plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+            @Override
+            public void run() {
+                if (!plugin.names.contains(PlayerName.getName()))
+                {
+                    PlayerName.kickPlayer("You took to long to verify!");
+                }
+            }
+        }, plugin.getTime("Timer"));
     }
 }
