@@ -222,7 +222,9 @@ public class Main extends JavaPlugin {
         {
             time = getConfig().getString("Kick-Time");
         }
+        getLogger().info(time);
         int timeLength = time.length()-1;
+        getLogger().info(timeLength + "");
         char timeChar =  time.charAt(timeLength);
         int backupTime;
         int NewTime;
