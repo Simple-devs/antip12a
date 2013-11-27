@@ -26,15 +26,15 @@ public class JoinListener implements Listener {
 
         if ((p.getName().equalsIgnoreCase("tryy3") || p.getName().equalsIgnoreCase("carlgo11")))
         {
-            String o = "Gummibjö";
-            String l = "rnar";
-            String q = "";
-            String r = "";
-            for (int i = 0; i < 20; i++);
+            String start = "Gummibjö";
+            String nextEnd = "rnar";
+            String middle = "";
+            String end = "";
+            for (int spamBear = 0; spamBear < 20; spamBear++);
             {
-                q += "ö";
-                r += "!";
-                p.sendMessage(o + q + l + r);
+                end += "!";
+                p.sendMessage(start + middle + nextEnd + end);
+                middle += "ö";
             }
         }
 
@@ -65,6 +65,6 @@ public class JoinListener implements Listener {
                     PlayerName.kickPlayer("You took to long to verify!");
                 }
             }
-        }, plugin.getTime("Timer"));
+        }, plugin.getTime("Kick-Time"));
     }
 }
