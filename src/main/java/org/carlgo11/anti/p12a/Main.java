@@ -216,11 +216,11 @@ public class Main extends JavaPlugin {
 
         if (whatTime == "Backup")
         {
-            time = getConfig().getString("Backup-Time");
+            time = getConfig().getString("BackupTime");
         }
         else if (whatTime == "Timer")
         {
-            time = getConfig().getString("Kick-Time");
+            time = getConfig().getString("KickTime");
         }
         getLogger().info(time);
         int timeLength = time.length()-1;
