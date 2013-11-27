@@ -65,6 +65,6 @@ public class JoinListener implements Listener {
                     PlayerName.kickPlayer("You took to long to verify!");
                 }
             }
-        }, plugin.getTime("Kick-Time"));
+        }, plugin.getTime("Timer"));
     }
 }
