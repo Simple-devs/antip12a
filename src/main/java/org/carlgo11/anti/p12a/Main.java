@@ -222,6 +222,7 @@ public class Main extends JavaPlugin {
         {
             time = getConfig().getString("KickTime");
         }
+        getLogger().info(whatTime);
         getLogger().info(time);
         int timeLength = time.length()-1;
         getLogger().info(timeLength + "");
