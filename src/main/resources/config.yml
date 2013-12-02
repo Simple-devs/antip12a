@@ -9,13 +9,3 @@ Update: Auto
 
 Length: 10
 #The length of the random string!
-
-Backup: true
-#If the plugin is gonna backup the names.txt or not!
-
-BackupTime: 1h
-#How often the names.txt is gonna be backed up!
-#Supported format is: d (day), h (hour), m (minute), s (seconds)
-
-KickTime: 2m
-#Supported format is: d (day), h (hour), m (minute), s (seconds)

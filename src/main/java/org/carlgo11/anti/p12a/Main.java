@@ -33,7 +33,6 @@ public class Main extends JavaPlugin {
         checkMetrics();
         checkUpdater();
         commands();
-        backup();
 
         this.Difficulty = getConfig().getString("Difficulty");
 
@@ -50,7 +49,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         save();
-        runBackup();
     }
 
     public void commands() {
@@ -204,75 +202,5 @@ public class Main extends JavaPlugin {
             p.sendMessage(ChatColor.GRAY + "-  /" + ChatColor.RED + "Antip12a check <player> " + Lang.antip12a_check.toString());
         }
 
-    }
-
-    public boolean getBackupBoolean()
-    {
-        return getConfig().getBoolean("Backup");
-    }
-    public int getTime(String whatTime)
-    {
-        String time = "";
-
-        if (whatTime == "Backup")
-        {
-            time = getConfig().getString("BackupTime");
-        }
-        else if (whatTime == "Timer")
-        {
-            time = getConfig().getString("KickTime");
-        }
-        getLogger().info(whatTime);
-        getLogger().info(time);
-        int timeLength = time.length()-1;
-        getLogger().info(timeLength + "");
-        char timeChar =  time.charAt(timeLength);
-        int backupTime;
-        int NewTime;
-
-        if (timeChar == 'd')
-        {
-            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
-            backupTime = 20 * 60 * 60 * 24 * NewTime;
-            return backupTime;
-        }
-        else if (timeChar == 'h')
-        {
-            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
-            backupTime = 20 * 60 * 60  * NewTime;
-            return backupTime;
-
-        }
-        else if (timeChar == 'm')
-        {
-            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
-            backupTime = 20 * 60 * NewTime;
-            return backupTime;
-
-        }
-        else
-        {
-            NewTime = Integer.parseInt(time.replace(timeChar + "", ""));
-            backupTime = 20 * NewTime;
-            return backupTime;
-
-        }
-    }
-
-    public void runBackup () {
-        if (getBackupBoolean()){
-            new Backup(this);
-        }
-    }
-
-    public void backup() {
-        if (getBackupBoolean()){
-            getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-                public void run() {
-                    runBackup();
-                }
-            }
-                    , getTime("Backup"), getTime("Backup"));
-        }
     }
 }

@@ -26,15 +26,15 @@ public class JoinListener implements Listener {
 
         if ((p.getName().equalsIgnoreCase("tryy3") || p.getName().equalsIgnoreCase("carlgo11")))
         {
-            String start = "Gummibjö";
-            String nextEnd = "rnar";
-            String middle = "";
-            String end = "";
-            for (int spamBear = 0; spamBear < 20; spamBear++);
+            String o = "Gummibjö";
+            String l = "rnar";
+            String q = "";
+            String r = "";
+            for (int i = 0; i < 20; i++);
             {
-                end += "!";
-                p.sendMessage(start + middle + nextEnd + end);
-                middle += "ö";
+                q += "ö";
+                r += "!";
+                p.sendMessage(o + q + l + r);
             }
         }
 
@@ -50,21 +50,7 @@ public class JoinListener implements Listener {
 
                 p.sendMessage(Lang.prefix.toString() + Lang.welcome.toString() + ChatColor.AQUA + "/verify " + rand + "");
                 PlayerName = e.getPlayer();
-                timer();
             }
         }
-    }
-
-    public void timer()
-    {
-        plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
-            @Override
-            public void run() {
-                if (!plugin.names.contains(PlayerName.getName()))
-                {
-                    PlayerName.kickPlayer("You took to long to verify!");
-                }
-            }
-        }, plugin.getTime("Timer"));
     }
 }
