@@ -1,13 +1,13 @@
-package org.carlgo11.anti.p12a.Listener;
+package org.simpledevs.antip12a.Listener;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.carlgo11.anti.p12a.Language.Lang;
-import org.carlgo11.anti.p12a.Main;
-import org.carlgo11.anti.p12a.RandomString;
+import org.simpledevs.antip12a.Language.Lang;
+import org.simpledevs.antip12a.Main;
+import org.simpledevs.antip12a.RandomString;
 
 public class JoinListener implements Listener {
     Main plugin;

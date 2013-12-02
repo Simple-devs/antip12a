@@ -1,4 +1,4 @@
-package org.carlgo11.anti.p12a.Commands;
+package org.simpledevs.antip12a.Commands;
 
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -6,8 +6,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.carlgo11.anti.p12a.Language.Lang;
-import org.carlgo11.anti.p12a.Main;
+import org.simpledevs.antip12a.Language.Lang;
+import org.simpledevs.antip12a.Main;
 
 public class VerifyCommand implements CommandExecutor {
 

@@ -4,7 +4,7 @@
  * This class provides the means to safely and easily update a plugin, or check to see if it is updated using dev.bukkit.org
  */
 
-package org.carlgo11.anti.p12a.Updater;
+package org.simpledevs.antip12a.Updater;
 
 import java.io.*;
 import java.net.MalformedURLException;

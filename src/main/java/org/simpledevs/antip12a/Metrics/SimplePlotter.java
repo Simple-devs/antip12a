@@ -1,6 +1,4 @@
-package org.carlgo11.anti.p12a.Metrics;
-
-import org.carlgo11.anti.p12a.Metrics.Metrics;
+package org.simpledevs.antip12a.Metrics;
 
 public class SimplePlotter extends Metrics.Plotter {
 

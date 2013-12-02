@@ -1,10 +1,10 @@
-package org.carlgo11.anti.p12a.Listener;
+package org.simpledevs.antip12a.Listener;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
-import org.carlgo11.anti.p12a.Main;
+import org.simpledevs.antip12a.Main;
 
 public class EntityDamageListener implements Listener {
 

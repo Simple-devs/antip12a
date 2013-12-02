@@ -1,6 +1,6 @@
-package org.carlgo11.anti.p12a.Listener;
+package org.simpledevs.antip12a.Listener;
 
-import org.carlgo11.anti.p12a.Main;
+import org.simpledevs.antip12a.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,4 +1,4 @@
-package org.carlgo11.anti.p12a;
+package org.simpledevs.antip12a;
 
 import java.util.Random;
 

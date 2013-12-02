@@ -1,18 +1,18 @@
-package org.carlgo11.anti.p12a;
+package org.simpledevs.antip12a;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.carlgo11.anti.p12a.Commands.Antip12aCommand;
-import org.carlgo11.anti.p12a.Commands.VerifyCommand;
-import org.carlgo11.anti.p12a.Language.Lang;
-import org.carlgo11.anti.p12a.Language.loadlang;
-import org.carlgo11.anti.p12a.Listener.*;
-import org.carlgo11.anti.p12a.Metrics.Metrics;
-import org.carlgo11.anti.p12a.Metrics.SimplePlotter;
-import org.carlgo11.anti.p12a.Updater.updater;
+import org.simpledevs.antip12a.Commands.Antip12aCommand;
+import org.simpledevs.antip12a.Commands.VerifyCommand;
+import org.simpledevs.antip12a.Language.Lang;
+import org.simpledevs.antip12a.Language.loadlang;
+import org.simpledevs.antip12a.Listener.*;
+import org.simpledevs.antip12a.Metrics.Metrics;
+import org.simpledevs.antip12a.Metrics.SimplePlotter;
+import org.simpledevs.antip12a.Updater.updater;
 
 import java.io.*;
 import java.util.ArrayList;

@@ -1,11 +1,11 @@
-package org.carlgo11.anti.p12a.Language;
+package org.simpledevs.antip12a.Language;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
-import org.carlgo11.anti.p12a.Main;
+import org.simpledevs.antip12a.Main;
 
 public class loadlang implements Listener {
 

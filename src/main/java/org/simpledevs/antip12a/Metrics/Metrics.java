@@ -1,4 +1,4 @@
-package org.carlgo11.anti.p12a.Metrics;
+package org.simpledevs.antip12a.Metrics;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;

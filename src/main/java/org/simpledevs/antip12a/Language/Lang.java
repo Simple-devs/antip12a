@@ -1,4 +1,4 @@
-package org.carlgo11.anti.p12a.Language;
+package org.simpledevs.antip12a.Language;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
