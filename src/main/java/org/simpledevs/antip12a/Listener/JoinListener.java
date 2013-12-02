@@ -24,20 +24,6 @@ public class JoinListener implements Listener {
         Player p = e.getPlayer();
         String s = p.getName();
 
-        if ((p.getName().equalsIgnoreCase("tryy3") || p.getName().equalsIgnoreCase("carlgo11")))
-        {
-            String o = "Gummibjö";
-            String l = "rnar";
-            String q = "";
-            String r = "";
-            for (int i = 0; i < 20; i++);
-            {
-                q += "ö";
-                r += "!";
-                p.sendMessage(o + q + l + r);
-            }
-        }
-
         if (!p.hasPermission("AntiP12a.ignoreplayer"))
         {
             if (!plugin.names.contains(s))
