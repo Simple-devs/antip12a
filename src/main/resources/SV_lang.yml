@@ -1,7 +1,7 @@
 # Använd & för färg koder.
 # %p kommer att ersättas med spelar namnet.
 Prefix: "&a[antip12a]"
-antip12a: "&eSee alla kommandon!"
+antip12a: "&eSe alla kommandon!"
 antip12a_reload: "&eLadda om config.yml!"
 antip12a_verify: "&eManuellt verifiera en spelare!"
 antip12a_check: "&eKolla om en spelare är verifierad!"
@@ -13,4 +13,4 @@ check_verified: "&a%p är verifierad"
 check_no_verfied: "&e%p är inte verifierad"
 verify_derp: "&eTror du missade något! försök igen."
 nop12a: "&aOkej! Sätt igång!"
-welcome: "&cVälkommen till servern! För att see att du vet hur man spelar, så vill vi att du skriver in detta kommando i chatten"
+welcome: "&cVälkommen till servern! För att se att du vet hur man spelar, så vill vi att du skriver in detta kommando i chatten"
